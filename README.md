@@ -140,7 +140,6 @@ These scores and relevance is provided by us only. We intent to do a user study 
 # FUTURE WORK
 
 ODPReco tool can be made as a plug-in in protégé so that the user can get the recommendations on the protégé platform only.
-
 Also, for recommendation, other software pattern approaches can be followed so that the efficiency of ODPReco increases.
 
 
