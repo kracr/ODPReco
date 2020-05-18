@@ -90,7 +90,9 @@ The results obtained with OWL file -
 |   Temporal Extent ODP        |	   .82      |      yes	                |                 -                              |
 |   Entity-Feature ODP         |	   .81      |	     no                   |  covers cell features in biological domain     |
 |      Toco                    |	    .8	    |      no	                  |  as used with telecommunication                |                         
+
 The results obtained when OWL file and description are passed to ODPReco-
+
 
 |    Ontology	                 |     Score	  |    Relevant/Not Relevant	|      Comment                                   |
 |------------------------------|--------------|---------------------------|------------------------------------------------|
