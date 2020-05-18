@@ -66,7 +66,7 @@ ODPReco is tested with some ontologies that are available online. Moderate to go
 
 It is the content ontology pattern present in the ODP repository. We have used this pattern in our collection (as ODP) and we are testing this on ODPReco to check its correctness. We tested this ontology in 4 different ways. First, we passed only the OWL file, then in the second test, we passed the OWL file and description, in the third test, OWL file and CQs were passed and in the fourth test, all three dimensions, that is, OWL file, CQ and description were passed. Same results were obtained in all the four tests
 
-1.	Ontology- Infectious disease ontology taken from NCBIO
+
 
 | Ontology   |    	Score	  | Relevant/Not Relevant	   | Comment                                        |
 |------------|--------------|--------------------------|------------------------------------------------|
@@ -76,7 +76,7 @@ As Chess ODP is recommended, it suggests that our tool is showing relevant resul
 
 2. Enslaved Ontology :
 
-It is an ontology about the historic slave trade \cite{shimizu_enslaved_2020}. It captures data about historic persons and the events associated. It is a modular ontology that uses ODPs like Event, Place, Temporal ones etc. We have used this ontology for validation.  
+It is an ontology about the historic slave trade. It captures data about historic persons and the events associated. It is a modular ontology that uses ODPs like Event, Place, Temporal ones etc. We have used this ontology for validation.  
 
 No CQs are present for this ontology. So, we tested our tool in two ways- first only with the OWL file and then in the second test we passed OWL file and description to our tool.
 
