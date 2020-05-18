@@ -1,13 +1,13 @@
 # ODPReco
-ODPReco is a tool for recommending ODPs (Ontology Design Patterns) to a given ontology. This tool can be used after an ontology has benn made. The ODPs recommended by ODPReco can be used in the ontology to make it modular.
+ODPReco is a tool for recommending ODPs (Ontology Design Patterns) to a given ontology. The ODPs recommended by ODPReco can be used in the ontology to make it modular.
 
 # Table of Contents:
 
 i.	Introduction
 
-ii.	Goal
+ii.	 Goal
 
-iii.	Approach
+iii. Approach
 
 iv.	Examples
 
@@ -26,17 +26,15 @@ One of the main challenges of an ontology design is its re-usability. Ontologies
 
 # GOAL
 
-Our work is based on recommending an ODP for an ontology. By using an ODP in an ontology, the user can re-use the features of ODP according to his domain and make the ontology more modular.
+Our work is based on recommending ODPs for an ontology. By using an ODP in an ontology, the user can re-use the features of ODP according to his domain and make the ontology more modular.
 
 In order to recommend ODPs, ODPReco maintains a list of avaiable ODPs. The details of the ODPs maintained are - their OWL file, competency questions and their description. 73 ODPs are maintained from three datasets.
 
-1. ODPs from the ODP repository http://ontologydesignpatterns.org. Out of the 220 ODPs available, we have considered 41 ODPs in our collection. Not all ODPs are included in our collection because several ODPs either do not have downloadable OWL file or have similar OWL files. So, to avoid redundancy of OWL files, only 41 ODPs are included.
+1. ODPs from the ODP repository http://ontologydesignpatterns.org. Out of the 220 ODPs available, we have considered 41 ODPs in our collection. Not all ODPs are included in our collection because several ODPs either do not have downloadable OWL file or have similar OWL files. So, to avoid redundancy of OWL files, only 41 ODPs are included. T
 
-2. MODL: Modular Ontology Design Library is a well-documented, downloadable collection of ODPs. Some of the ODPs present in this dataset are taken from the ODP repository and their ordered and well-organised OWL file along with the competency questions is created. For our collection, all the 17 ODPs present in MODL have been considered. The OWL file along with the competency questions and their description is maintained in our collection.
+2. MODL: Modular Ontology Design Library is a well-documented, downloadable collection of ODPs. Some of the ODPs present in this dataset are taken from the ODP repository and their ordered and well-organised OWL file along with the competency questions is created. For our collection, all the 17 ODPs present in MODL have been considered. 
 
 3. Manchester ODPs: These ODPs are exclusively maintained for the biological domain. The ODPs present are divided into three categories - Extension ODPs (bypassing the limitation of OWL), Good Practice ODPs (for obtaining robust and a cleaner ontology) and Domain Modelling ODPs (modelling solutions in the domain of biology). 15 ODPs are present in total and all 15 present are included in our collection.
-
-The tool is built in Java-Eclipse.
 
 # APPROACH
 
@@ -44,17 +42,17 @@ The ODPs are recommended on the basis of 3 analysis - structural, behavioural an
 
 *Structural Analysis-*
 
-It is the one in which the OWL file of the given ontology is compared with the OWL file of all the listed ODPs. This is done via Doc2Vec. The OWL file is analysed by its properties- SubClass, ObjectPropertyDomain, ObjectPropertyRange, ChainOf Property , Data Property etc. For doing so, OWL API is used to load the ontology and extract the axioms from it.
+It is the one in which the OWL file of the given ontology is compared with the OWL file of all the listed ODPs. This is done via Doc2Vec. The OWL file is analysed by its properties- SubClass, ObjectPropertyDomain, ObjectPropertyRange, ChainOf Property , Data Property etc. The axioms of the ontology are extracted using the OWL API.
 
 *Behavioural Analysis-*
 
-Competency Questions are considered to be important for an ontology. The competency questions of an ontology are mapped with the CQs of ODPs.
+Competency Questions are considered to be important for an ontology. The competency questions of an ontology are mapped with the CQs of ODPs. Competency questions (CQs) represent the domain knowledge that is involved in the ontology. They are important in the life-cycle of an ontology as these represent the requirements and the scope of an ontology. The CQs of the ontology are compared with the CQs of our collection to carry out the behavioural analysis.
 
 *Lexical Analysis-*
 
-It includes the mapping of  the description along with the signature (class and property names) of an ontology with those of the ODPs.
+The signature of the ontology is compared with the signature of ODPs present in our collection. The signature includes the names of the classes, properties and instances of an ontology. Apart from the signature, description (brief overview) of the ontology is also used in this analysis.
 
-On doing these 3 analysis, the numeric values obtained are added for each listed ODP. So, we obtain 73 values (of ODPs) against an ontology. The values obtained are normalized so that they can be ranged between 0-1.  The threshold for recommending an ODP is set at .8. Hence, all the ODPs having value >= .8 is listed in the recommendation. 
+After doing the analysis of these three dimensions, the numeric values obtained are added for each listed ODP. So, we obtain 73 values (of ODPs) against an ontology. The values obtained are normalized so that they can be ranged between 0-1.  The threshold for recommending an ODP is set at .8. Hence, all the ODPs having value >= .8 is listed in the recommendation. 
 
 The 73 ODPs that are considered in our tool are available with the OWL file, Competency Questions and the Description.
 
