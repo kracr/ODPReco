@@ -9,6 +9,12 @@ ii.	 Goal
 
 iii. Approach
 
+iv. Usage
+
+&nbsp; &nbsp; &nbsp; a. Prerequisites
+
+&nbsp; &nbsp; &nbsp; b. Execution Procedure
+
 iv.	Examples
 
 v.	Future Work
@@ -58,6 +64,24 @@ The 73 ODPs that are considered in our tool are available with the OWL file, Com
 
 The necessary condition for using this tool is to upload the OWL file. If the OWL file of an ontology is not provided, then our tool will not be able to provide any recommendations. However, if the description or competency questions of an ontology aren’t available, then still the ODP recommendation is made. 
 
+# USAGE
+
+Jar file of ODPReco has been created and the user can run the jar file on command line to know the ODP recommendations for the given ontology.
+
+ &nbsp; &nbsp; a. Prerequisites:
+ 
+ The user must have java installed in the system inorder to run the jar file. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to enter the description for that ontology along with the competency questions.
+ 
+ &nbsp; &nbsp; b. Execution Procedure:
+ 
+ After the jar file has been downloaded, it can run in the command prompt. The user has to enter three arguments in the command line. The first argument is to enter the description, the second argument is for competency questions and the third argument is for uploading the OWL file. The third argument is passed by entering the OWL file path with .owl extension. 
+ 
+ While entering the description and competency questions for the ontology, the user should not leave space between words (as it would be considered as the next argument).
+ 
+ The command for running the jar file is : java -jar odpreco.jar description_test cq_text path_of_owl_file.owl
+ 
+ After running the command, recommendations for the ontology will follow.
+ 
 # EXAMPLES
 
 ODPReco is tested with some ontologies that are available online. Moderate to good results are obtained. It is observed that most appropriate recommendations are provided when all the three components ,that is, the OWL file, competency questions and description is given by the user while as average results are provided when only the OWL file or OWL file with competency questions or description is given by the user.
