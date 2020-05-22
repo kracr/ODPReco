@@ -76,9 +76,9 @@ Jar file of ODPReco has been created and the user can run the jar file on comman
  
  After the jar file has been downloaded, it can run in the command prompt. The user has to enter three arguments in the command line. The first argument is to enter the description, the second argument is for competency questions and the third argument is for uploading the OWL file. The third argument is passed by entering the OWL file path with .owl extension. 
  
- While entering the description and competency questions for the ontology, the user should not leave space between words (as it would be considered as the next argument).
+ The user should pass description and competency questions in quotes so that the spaces in description/cq are not considered as another argument.
  
- The command for running the jar file is : java -jar odpreco.jar description_test cq_text path_of_owl_file.owl
+ The command for running the jar file is : java -jar odpreco.jar "description test" "cq text" path_of_owl_file.owl
  
  After running the command, recommendations for the ontology will follow.
  
