@@ -1,0 +1,74 @@
+
+
+
+DataPropertyDomain(<climaticzone.owl#hasReferenceYear> <climaticzone.owl#AquaticResourceObservation>)
+
+
+DataPropertyDomain(<region.owl#hasRegionDataValue> <region.owl#Region>)
+
+
+
+
+
+
+
+
+
+
+
+DataPropertyDomain(<invoice.owl#LineItemCountQuantity> <invoice.owl#Invoice>)DataPropertyDomain(<invoice.owl#ID> <invoice.owl#Invoice>)
+
+
+
+
+
+
+
+
+
+DataPropertyDomain(<set.owl#size> <collectionentity.owl#Collection>)
+
+DataPropertyDomain(<speciesbathymetry.owl#hasRangeMin> <speciesbathymetry.owl#BathymetricRange>)DataPropertyDomain(<speciesbathymetry.owl#hasRangeMax> <speciesbathymetry.owl#BathymetricRange>)
+DataPropertyDomain(<tagging.owl#hasPolarity> <tagging.owl#Tagging>)
+
+
+
+
+DataPropertyDomain(<verticaldistribution.owl#hasReferenceYear> <verticaldistribution.owl#AquaticResourceObservation>)
+
+
+DataPropertyDomain(<lastName> <Person>)DataPropertyDomain(<hardTimeout> <Flow>)DataPropertyDomain(<hasGainofOpticalFilter> <LiFiAccessPoint>)DataPropertyDomain(<hasUnit> <ObervationAndMeasurement>)DataPropertyDomain(<nwTos> <Flow>)DataPropertyDomain(<hasMAC> <Interface>)DataPropertyDomain(<gender> <Person>)DataPropertyDomain(<dlDst> <Flow>)DataPropertyDomain(<wgs84_pos#alt> <wgs84_pos#SpartialThing>)DataPropertyDomain(<hasRespansivity> <LiFiAccessPoint>)DataPropertyDomain(<toPort> <Action>)DataPropertyDomain(<hasServiceType> <Service>)DataPropertyDomain(<priority> <Flow>)DataPropertyDomain(<hasAntennaHeight> <WLAN>)DataPropertyDomain(<wgs84_pos#lat> <wgs84_pos#SpartialThing>)DataPropertyDomain(<hasOpticalTransmittedPower> <LiFiAccessPoint>)DataPropertyDomain(<driver> <AccessPoint>)DataPropertyDomain(<dlSrc> <Flow>)DataPropertyDomain(<hasServiceEndTime> <Service>)DataPropertyDomain(<cookie> <Flow>)DataPropertyDomain(<inPort> <Flow>)DataPropertyDomain(<flags> <Flow>)DataPropertyDomain(<hasLiFiAccessPointProperty> <LiFiAccessPoint>)DataPropertyDomain(<hasUserID> <User>)DataPropertyDomain(<hasServiceStartTime> <Service>)DataPropertyDomain(<hasPacketLoss> <Link>)DataPropertyDomain(<firstName> <Person>)DataPropertyDomain(<hasJoinDate> <UserDevice>)DataPropertyDomain(<frequency> <Interface>)DataPropertyDomain(<hasGainOfConcentrator> <LiFiUserEquipment>)DataPropertyDomain(<hasErrorCode> <Service>)DataPropertyDomain(<hasFieldOfView> <LiFiUserEquipment>)DataPropertyDomain(<hasHalfIntensityAngle> <LiFiAccessPoint>)DataPropertyDomain(<hasValue> <ObervationAndMeasurement>)DataPropertyDomain(<wgs84_pos#long> <wgs84_pos#SpartialThing>)DataPropertyDomain(<hasIP> <Interface>)DataPropertyDomain(<channel> <Interface>)DataPropertyDomain(<nwProtocol> <Flow>)DataPropertyDomain(<isUP> <Interface>)DataPropertyDomain(<mode> <Interface>)DataPropertyDomain(<ssid> <Device>)DataPropertyDomain(<hasLiFiUserEquipmentProperty> <LiFiUserEquipment>)DataPropertyDomain(<hasServiceStatus> <Service>)DataPropertyDomain(<hasInterfaceName> <Interface>)DataPropertyDomain(<hasAntennaGain> <WLAN>)DataPropertyDomain(<tableId> <Flow>)DataPropertyDomain(<idleTimeout> <Flow>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DataPropertyDomain(<DUL.owl#hasIntervalDate> <DUL.owl#TimeInterval>)DataPropertyDomain(<DUL.owl#hasRegionDataValue> <DUL.owl#Region>)DataPropertyDomain(<DUL.owl#hasEventDate> <DUL.owl#Event>)DataPropertyDomain(<DUL.owl#hasParameterDataValue> <DUL.owl#Parameter>)DataPropertyDomain(<DUL.owl#hasDataValue> <DUL.owl#Entity>)
+
+
+
+
+
+
+
+DataPropertyDomain(<ActivityPattern#hasDuration> <ActivityPattern#Activity>)DataPropertyDomain(<ActivityPattern#hasStart> <ActivityPattern#Activity>)DataPropertyDomain(<ActivityPattern#hasEnd> <ActivityPattern#Activity>)

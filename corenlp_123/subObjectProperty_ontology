@@ -1,0 +1,1 @@
+SubObjectPropertyOf(<hasFirstHalfMove> <hasHalfMove>)SubObjectPropertyOf(<hasHalfMove> ObjectInverseOf(<subEventOf>))SubObjectPropertyOf(<hasLastHalfMove> <hasHalfMove>)

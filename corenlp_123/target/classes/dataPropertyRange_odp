@@ -1,0 +1,73 @@
+
+
+DataPropertyRange(<climaticzone.owl#hasReferenceYear> xsd:gYear)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DataPropertyRange(<invoice.owl#LineItemCountQuantity> xsd:int)DataPropertyRange(<invoice.owl#ID> xsd:string)
+
+
+
+
+
+
+
+
+
+DataPropertyRange(<set.owl#size> xsd:integer)
+
+DataPropertyRange(<speciesbathymetry.owl#hasRangeMin> xsd:float)DataPropertyRange(<speciesbathymetry.owl#hasRangeMax> xsd:float)
+DataPropertyRange(<tagging.owl#hasPolarity> xsd:boolean)
+
+
+
+
+DataPropertyRange(<verticaldistribution.owl#hasReferenceYear> xsd:gYear)
+
+
+DataPropertyRange(<hasAntennaGain> xsd:int)DataPropertyRange(<toPort> xsd:string)DataPropertyRange(<hardTimeout> xsd:string)DataPropertyRange(<channel> xsd:int)DataPropertyRange(<mode> xsd:int)DataPropertyRange(<wgs84_pos#lat> xsd:float)DataPropertyRange(<wgs84_pos#alt> xsd:float)DataPropertyRange(<nwProtocol> xsd:string)DataPropertyRange(<dlSrc> xsd:string)DataPropertyRange(<hasPacketLoss> xsd:float)DataPropertyRange(<hasOpticalTransmittedPower> xsd:float)DataPropertyRange(<firstName> rdfs:Literal)DataPropertyRange(<hasHalfIntensityAngle> xsd:float)DataPropertyRange(<hasJoinDate> xsd:dateTime)DataPropertyRange(<hasRadianceAngle> xsd:float)DataPropertyRange(<lastName> rdfs:Literal)DataPropertyRange(<hasServiceEndTime> xsd:dateTime)DataPropertyRange(<hasFieldOfView> xsd:float)DataPropertyRange(<hasMAC> xsd:string)DataPropertyRange(<hasWirelessLinkProperty> xsd:float)DataPropertyRange(<hasDistance> xsd:float)DataPropertyRange(<wgs84_pos#long> xsd:float)DataPropertyRange(<hasServiceStartTime> xsd:dateTime)DataPropertyRange(<cookie> xsd:string)DataPropertyRange(<gender> rdfs:Literal)DataPropertyRange(<hasUnit> xsd:string)DataPropertyRange(<hasGainOfConcentrator> xsd:float)DataPropertyRange(<dlDst> xsd:string)DataPropertyRange(<hasUserID> xsd:string)DataPropertyRange(<priority> xsd:string)DataPropertyRange(<inPort> xsd:string)DataPropertyRange(<hasValue> xsd:float)DataPropertyRange(<hasLinkProperty> xsd:float)DataPropertyRange(<flags> xsd:int)DataPropertyRange(<ssid> xsd:string)DataPropertyRange(<hasRespansivity> xsd:float)DataPropertyRange(<tableId> xsd:string)DataPropertyRange(<isUP> xsd:boolean)DataPropertyRange(<hasIncidentAngle> xsd:float)DataPropertyRange(<hasServiceType> xsd:string)DataPropertyRange(<nwTos> xsd:int)DataPropertyRange(<hasAntennaHeight> xsd:float)DataPropertyRange(<hasLiFiAssociationProperty> xsd:float)DataPropertyRange(<frequency> xsd:float)DataPropertyRange(<hasServiceStatus> xsd:string)DataPropertyRange(<hasGainofOpticalFilter> xsd:float)DataPropertyRange(<hasIP> xsd:string)DataPropertyRange(<hasErrorCode> xsd:string)DataPropertyRange(<hasLiFiAccessPointProperty> xsd:float)DataPropertyRange(<hasInterfaceName> xsd:string)DataPropertyRange(<idleTimeout> xsd:string)DataPropertyRange(<driver> xsd:string)DataPropertyRange(<hasLiFiUserEquipmentProperty> xsd:float)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DataPropertyRange(<DUL.owl#hasEventDate> xsd:dateTime)DataPropertyRange(<DUL.owl#hasIntervalDate> xsd:dateTime)
+
+
+
+
+
+
+
+DataPropertyRange(<ActivityPattern#hasDuration> xsd:duration)DataPropertyRange(<ActivityPattern#hasStart> xsd:dateTime)DataPropertyRange(<ActivityPattern#hasEnd> xsd:dateTime)
