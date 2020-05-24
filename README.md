@@ -82,6 +82,8 @@ Jar file of ODPReco has been created and the user can run the jar file on comman
  
  After running the command, recommendations for the ontology will follow.
  
+ User can also clone this project and run it on an IDE.
+ 
 # EXAMPLES
 
 ODPReco is tested with some ontologies that are available online. Moderate to good results are obtained. It is observed that most appropriate recommendations are provided when all the three components ,that is, the OWL file, competency questions and description is given by the user while as average results are provided when only the OWL file or OWL file with competency questions or description is given by the user.
