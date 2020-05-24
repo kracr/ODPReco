@@ -1,1 +1,0 @@
-SubObjectPropertyOf(ObjectPropertyChain( <agentRecordSelfProperty> <recordedAt> <eventSelfProperty> ) <reportsOn>)SubObjectPropertyOf(ObjectPropertyChain( <isDirectlyBasedOn> <hasOriginalSourceType> ) <hasOriginalSourceType>)SubObjectPropertyOf(ObjectPropertyChain( ObjectInverseOf(<isDirectlyBasedOn>) ObjectInverseOf(<hasOriginalSourceType>) ) <hasOriginalSourceType>)
