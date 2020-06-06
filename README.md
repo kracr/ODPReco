@@ -48,7 +48,7 @@ The ODPs are recommended on the basis of 3 analysis - structural, behavioural an
 
 *Structural Analysis-*
 
-It is the one in which the OWL file of the given ontology is compared with the OWL file of all the listed ODPs. This is done via Doc2Vec. The OWL file is analysed by its properties- SubClass, ObjectPropertyDomain, ObjectPropertyRange, ChainOf Property , Data Property etc. The axioms of the ontology are extracted using the OWL API.
+It is the one in which the OWL file of the given ontology is compared with the OWL file of all the listed ODPs. This is done via Doc2Vec. The OWL file is analysed by its properties- SubClass, ObjectPropertyDomain, ObjectPropertyRange, DisjointClasses, etc. The axioms of the ontology are extracted using the OWL API.
 
 *Behavioural Analysis-*
 
@@ -74,15 +74,14 @@ Jar file of ODPReco has been created and the user can run the jar file on comman
  
  &nbsp; &nbsp; b. Execution Procedure:
  
- After the jar file has been downloaded, it can run in the command prompt. The jar file along with the library folder (of dependencies) and resources folder should be kept in a single folder. The user has to enter three arguments in the command line. The first argument is to enter the description, the second argument is for competency questions and the third argument is for uploading the OWL file. The third argument is passed by entering the OWL file path with .owl extension. 
+ After the jar file has been downloaded, it can run in the command prompt. The jar file along with the library folder (of dependencies) and resources folder should be kept in a single folder. 
+
  
- The user should pass description and competency questions in quotes so that the spaces in description/cq are not considered as another argument.
+ The command for running the jar file is : java -jar odp-tool.jar 
  
- The command for running the jar file is : java -jar odpreco.jar "description test" "cq text" path_of_owl_file.owl
+ After running the command, the user is asked to enter the description, competency questions and OWL file path of the ontology. It is  mandatory to enter the OWL file path. The description and competency questions can be skipped.
  
- After running the command, recommendations for the ontology will follow.
- 
- User can also clone this project and run it on an IDE.
+ User can also clone this project and run it.
  
 # EXAMPLES
 
