@@ -74,14 +74,26 @@ Jar file of ODPReco has been created and the user can run the jar file on comman
  
  &nbsp; &nbsp; b. Execution Procedure:
  
- After the jar file has been downloaded, it can run in the command prompt. The jar file along with the library folder (of dependencies) and resources folder should be kept in a single folder. 
-
+ Clone this project and download its zip folder. Extract it and save it in a folder.
  
- The command for running the jar file is : java -jar odp-tool.jar 
+ Open command line and go to the location where this folder is saved. After entering into the folder, follow the sequence as mentioned below-
  
- After running the command, the user is asked to enter the description, competency questions and OWL file path of the ontology. It is  mandatory to enter the OWL file path. The description and competency questions can be skipped.
+ cd corenlp_123  
  
- User can also clone this project and run it.
+ mvn compile
+ 
+ mvn install
+ 
+ After this step, the jar file alongwith dependencies will be created in target folder. 
+ 
+ Copy the resources folder (present in corenlp_123 folder) into the target folder and change the path in command line to target folder by entering cd target
+ 
+ jar file can be executed from this folder by using the command - java -jar odpreco-with-dependencies.jar
+ 
+ After entering this command, the user is asked to enter the description, competency questions and the OWL file path. It is mandatory to enter the OWL file path, the description and competency questions can be skipped. Recomemndations follow after user enters the input.
+ 
+ After ODPReco has recommended ODPs, kindly fill this form https://forms.gle/SV3vgdsDqJ8hMVw68 .It is user feedback form.
+ 
  
 # EXAMPLES
 
