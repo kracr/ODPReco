@@ -1,0 +1,318 @@
+Prefix(:=<http://purl.org/NET/rdfchess/ontology/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(cpannotationschema:=<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#>)
+
+
+Ontology(<http://purl.org/NET/rdfchess/ontology/>
+Import(<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl>)
+Annotation(cpannotationschema:coversRequirements "List all moves in a Fools Mate game where black wins after 2 moves by both players?")
+Annotation(cpannotationschema:coversRequirements "What did Kasparov say about his opponent first two moves in his commentary about his game against Topalov in 1999 Tournament in Wijk aan Zee?")
+Annotation(cpannotationschema:coversRequirements "What is the first move taken by black player in the Sicilian Defence opening?")
+Annotation(cpannotationschema:coversRequirements "Who played against Kasparov in the round 1994 Linares tournament? Did (s)he play as a white or black player?")
+Annotation(cpannotationschema:hasIntent "To model a flexible schema to allow exposing chess games as linked data.")
+Annotation(cpannotationschema:relatedCPs <http://ontologydesignpatterns.org/wiki/Submissions:AgentRole>)
+Annotation(cpannotationschema:relatedCPs <http://schema.geolink.org/dev/pattern/agentrole>)
+Annotation(cpannotationschema:scenarios "Exposing chess games as linked data")
+
+Declaration(Class(:ActingPlayerRole))
+Declaration(Class(:Agent))
+Declaration(Class(:AgentRole))
+Declaration(Class(:AuthorRole))
+Declaration(Class(:BlackPlayerRole))
+Declaration(Class(:ChessCompetitionInstance))
+Declaration(Class(:ChessCompetitionRound))
+Declaration(Class(:ChessCompetitionSeries))
+Declaration(Class(:ChessGame))
+Declaration(Class(:ChessGameManifestation))
+Declaration(Class(:ChessGameResult))
+Declaration(Class(:ChessOpening))
+Declaration(Class(:Event))
+Declaration(Class(:HalfMove))
+Declaration(Class(:HalfMoveAnnotation))
+Declaration(Class(:Place))
+Declaration(Class(:TemporalExtent))
+Declaration(Class(:WhitePlayerRole))
+Declaration(ObjectProperty(:annotatesHalfMove))
+Declaration(ObjectProperty(:atPlace))
+Declaration(ObjectProperty(:atTime))
+Declaration(ObjectProperty(:containsAnnotation))
+Declaration(ObjectProperty(:hasFirstHalfMove))
+Declaration(ObjectProperty(:hasHalfMove))
+Declaration(ObjectProperty(:hasLastHalfMove))
+Declaration(ObjectProperty(:hasManifestation))
+Declaration(ObjectProperty(:hasOpening))
+Declaration(ObjectProperty(:hasResult))
+Declaration(ObjectProperty(:nextHalfMove))
+Declaration(ObjectProperty(:partOf))
+Declaration(ObjectProperty(:performedBy))
+Declaration(ObjectProperty(:providesAgentRole))
+Declaration(ObjectProperty(:subEventOf))
+Declaration(DataProperty(:encodedAsSAN))
+Declaration(DataProperty(:hasContent))
+Declaration(DataProperty(:hasECOCode))
+Declaration(DataProperty(:hasOpeningName))
+Declaration(DataProperty(:hasPGNFile))
+Declaration(DataProperty(:hasSANRecord))
+Declaration(DataProperty(:originatesFrom))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :annotatesHalfMove (annotatesHalfMove)
+
+AnnotationAssertion(rdfs:label :annotatesHalfMove "annotatesHalfMove")
+
+# Object Property: :atPlace (atPlace)
+
+AnnotationAssertion(rdfs:label :atPlace "atPlace")
+
+# Object Property: :atTime (atTime)
+
+AnnotationAssertion(rdfs:label :atTime "atTime")
+
+# Object Property: :containsAnnotation (containsAnnotation)
+
+AnnotationAssertion(rdfs:label :containsAnnotation "containsAnnotation")
+
+# Object Property: :hasFirstHalfMove (hasFirstHalfMove)
+
+AnnotationAssertion(rdfs:label :hasFirstHalfMove "hasFirstHalfMove")
+SubObjectPropertyOf(:hasFirstHalfMove :hasHalfMove)
+
+# Object Property: :hasHalfMove (hasHalfMove)
+
+AnnotationAssertion(rdfs:label :hasHalfMove "hasHalfMove")
+SubObjectPropertyOf(:hasHalfMove ObjectInverseOf(:subEventOf))
+
+# Object Property: :hasLastHalfMove (hasLastHalfMove)
+
+AnnotationAssertion(rdfs:label :hasLastHalfMove "hasLastHalfMove")
+SubObjectPropertyOf(:hasLastHalfMove :hasHalfMove)
+
+# Object Property: :hasManifestation (hasManifestation)
+
+AnnotationAssertion(rdfs:label :hasManifestation "hasManifestation")
+
+# Object Property: :hasOpening (hasOpening)
+
+AnnotationAssertion(rdfs:label :hasOpening "hasOpening")
+
+# Object Property: :hasResult (hasResult)
+
+AnnotationAssertion(rdfs:label :hasResult "hasResult")
+
+# Object Property: :nextHalfMove (nextHalfMove)
+
+AnnotationAssertion(rdfs:label :nextHalfMove "nextHalfMove")
+
+# Object Property: :partOf (partOf)
+
+AnnotationAssertion(rdfs:label :partOf "partOf")
+
+# Object Property: :performedBy (performedBy)
+
+AnnotationAssertion(rdfs:label :performedBy "performedBy")
+
+# Object Property: :providesAgentRole (providesAgentRole)
+
+AnnotationAssertion(rdfs:label :providesAgentRole "providesAgentRole")
+
+# Object Property: :subEventOf (subEventOf)
+
+AnnotationAssertion(rdfs:label :subEventOf "subEventOf")
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :encodedAsSAN (encodedAsSAN)
+
+AnnotationAssertion(rdfs:comment :encodedAsSAN "SAN = Standard Algebraic Notation")
+AnnotationAssertion(rdfs:label :encodedAsSAN "encodedAsSAN")
+
+# Data Property: :hasContent (hasContent)
+
+AnnotationAssertion(rdfs:label :hasContent "hasContent")
+
+# Data Property: :hasECOCode (hasECOCode)
+
+AnnotationAssertion(rdfs:comment :hasECOCode "ECO = Encyclopedia of Chess Opening")
+AnnotationAssertion(rdfs:label :hasECOCode "hasECOCode")
+
+# Data Property: :hasOpeningName (hasOpeningName)
+
+AnnotationAssertion(rdfs:label :hasOpeningName "hasOpeningName")
+
+# Data Property: :hasPGNFile (hasPGNFile)
+
+AnnotationAssertion(rdfs:comment :hasPGNFile "PGN = Portable Game Notation")
+AnnotationAssertion(rdfs:label :hasPGNFile "hasPGNFile")
+
+# Data Property: :hasSANRecord (hasSANRecord)
+
+AnnotationAssertion(rdfs:comment :hasSANRecord "SAN = Standard Algebraic Notation")
+AnnotationAssertion(rdfs:label :hasSANRecord "hasSANRecord")
+
+# Data Property: :originatesFrom (originatesFrom)
+
+AnnotationAssertion(rdfs:label :originatesFrom "originatesFrom")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :ActingPlayerRole (ActingPlayerRole)
+
+AnnotationAssertion(rdfs:label :ActingPlayerRole "ActingPlayerRole")
+SubClassOf(:ActingPlayerRole :AgentRole)
+SubClassOf(:ActingPlayerRole ObjectExactCardinality(1 ObjectInverseOf(:providesAgentRole) :HalfMove))
+
+# Class: :Agent (Agent)
+
+AnnotationAssertion(rdfs:label :Agent "Agent")
+
+# Class: :AgentRole (AgentRole)
+
+AnnotationAssertion(rdfs:label :AgentRole "AgentRole")
+SubClassOf(:AgentRole ObjectAllValuesFrom(:performedBy :Agent))
+SubClassOf(:AgentRole ObjectExactCardinality(1 :performedBy :Agent))
+
+# Class: :AuthorRole (AuthorRole)
+
+AnnotationAssertion(rdfs:label :AuthorRole "AuthorRole")
+SubClassOf(:AuthorRole :AgentRole)
+SubClassOf(:AuthorRole ObjectExactCardinality(1 ObjectInverseOf(:providesAgentRole) :ChessGameManifestation))
+
+# Class: :BlackPlayerRole (BlackPlayerRole)
+
+AnnotationAssertion(rdfs:label :BlackPlayerRole "BlackPlayerRole")
+SubClassOf(:BlackPlayerRole :AgentRole)
+SubClassOf(:BlackPlayerRole ObjectExactCardinality(1 ObjectInverseOf(:providesAgentRole) :ChessGame))
+
+# Class: :ChessCompetitionInstance (ChessCompetitionInstance)
+
+AnnotationAssertion(rdfs:label :ChessCompetitionInstance "ChessCompetitionInstance")
+SubClassOf(:ChessCompetitionInstance :Event)
+SubClassOf(:ChessCompetitionInstance ObjectAllValuesFrom(:partOf :ChessCompetitionSeries))
+
+# Class: :ChessCompetitionRound (ChessCompetitionRound)
+
+AnnotationAssertion(rdfs:label :ChessCompetitionRound "ChessCompetitionRound")
+SubClassOf(:ChessCompetitionRound :Event)
+SubClassOf(:ChessCompetitionRound ObjectAllValuesFrom(:subEventOf :ChessCompetitionInstance))
+
+# Class: :ChessCompetitionSeries (ChessCompetitionSeries)
+
+AnnotationAssertion(rdfs:label :ChessCompetitionSeries "ChessCompetitionSeries")
+SubClassOf(:ChessCompetitionSeries :Event)
+
+# Class: :ChessGame (ChessGame)
+
+AnnotationAssertion(rdfs:label :ChessGame "ChessGame")
+SubClassOf(:ChessGame :Event)
+SubClassOf(:ChessGame ObjectSomeValuesFrom(:providesAgentRole :BlackPlayerRole))
+SubClassOf(:ChessGame ObjectSomeValuesFrom(:providesAgentRole :WhitePlayerRole))
+SubClassOf(:ChessGame ObjectAllValuesFrom(:hasHalfMove :HalfMove))
+SubClassOf(:ChessGame ObjectAllValuesFrom(:hasManifestation :ChessGameManifestation))
+SubClassOf(:ChessGame ObjectAllValuesFrom(:hasOpening :ChessOpening))
+SubClassOf(:ChessGame ObjectAllValuesFrom(:hasResult :ChessGameResult))
+SubClassOf(:ChessGame ObjectAllValuesFrom(:subEventOf :ChessCompetitionRound))
+SubClassOf(:ChessGame ObjectExactCardinality(1 :hasFirstHalfMove :HalfMove))
+SubClassOf(:ChessGame ObjectExactCardinality(1 :hasLastHalfMove :HalfMove))
+
+# Class: :ChessGameManifestation (ChessGameManifestation)
+
+AnnotationAssertion(rdfs:label :ChessGameManifestation "ChessGameManifestation")
+SubClassOf(:ChessGameManifestation ObjectAllValuesFrom(:containsAnnotation :HalfMoveAnnotation))
+SubClassOf(:ChessGameManifestation DataAllValuesFrom(:hasPGNFile xsd:anyURI))
+SubClassOf(:ChessGameManifestation DataAllValuesFrom(:originatesFrom xsd:anyURI))
+
+# Class: :ChessGameResult (ChessGameResult)
+
+AnnotationAssertion(rdfs:label :ChessGameResult "ChessGameResult")
+SubClassOf(:ChessGameResult DataAllValuesFrom(:encodedAsSAN xsd:string))
+
+# Class: :ChessOpening (ChessOpening)
+
+AnnotationAssertion(rdfs:label :ChessOpening "ChessOpening")
+SubClassOf(:ChessOpening DataAllValuesFrom(:hasECOCode xsd:string))
+SubClassOf(:ChessOpening DataAllValuesFrom(:hasOpeningName xsd:string))
+
+# Class: :Event (Event)
+
+AnnotationAssertion(rdfs:label :Event "Event")
+SubClassOf(:Event ObjectSomeValuesFrom(:atPlace :Place))
+SubClassOf(:Event ObjectSomeValuesFrom(:atTime :TemporalExtent))
+SubClassOf(:Event ObjectAllValuesFrom(:atPlace :Place))
+SubClassOf(:Event ObjectAllValuesFrom(:atTime :TemporalExtent))
+SubClassOf(:Event ObjectAllValuesFrom(:subEventOf :Event))
+
+# Class: :HalfMove (HalfMove)
+
+AnnotationAssertion(rdfs:label :HalfMove "HalfMove")
+SubClassOf(:HalfMove :Event)
+SubClassOf(:HalfMove ObjectComplementOf(ObjectHasSelf(:nextHalfMove)))
+SubClassOf(:HalfMove ObjectSomeValuesFrom(:providesAgentRole :ActingPlayerRole))
+SubClassOf(:HalfMove ObjectAllValuesFrom(:nextHalfMove :HalfMove))
+SubClassOf(:HalfMove ObjectAllValuesFrom(:subEventOf :ChessGame))
+SubClassOf(:HalfMove ObjectExactCardinality(1 ObjectInverseOf(:hasHalfMove) :ChessGame))
+SubClassOf(:HalfMove ObjectMaxCardinality(1 :nextHalfMove :HalfMove))
+SubClassOf(:HalfMove DataAllValuesFrom(:hasSANRecord xsd:string))
+
+# Class: :HalfMoveAnnotation (HalfMoveAnnotation)
+
+AnnotationAssertion(rdfs:label :HalfMoveAnnotation "HalfMoveAnnotation")
+SubClassOf(:HalfMoveAnnotation ObjectSomeValuesFrom(:annotatesHalfMove :HalfMove))
+SubClassOf(:HalfMoveAnnotation ObjectAllValuesFrom(:annotatesHalfMove :HalfMove))
+SubClassOf(:HalfMoveAnnotation DataSomeValuesFrom(:hasContent xsd:string))
+SubClassOf(:HalfMoveAnnotation DataAllValuesFrom(:hasContent xsd:string))
+
+# Class: :Place (Place)
+
+AnnotationAssertion(rdfs:label :Place "Place")
+
+# Class: :TemporalExtent (TemporalExtent)
+
+AnnotationAssertion(rdfs:label :TemporalExtent "TemporalExtent")
+
+# Class: :WhitePlayerRole (WhitePlayerRole)
+
+AnnotationAssertion(rdfs:label :WhitePlayerRole "WhitePlayerRole")
+SubClassOf(:WhitePlayerRole :AgentRole)
+SubClassOf(:WhitePlayerRole ObjectExactCardinality(1 ObjectInverseOf(:providesAgentRole) :ChessGame))
+
+
+SubClassOf(ObjectSomeValuesFrom(:annotatesHalfMove :HalfMove) :HalfMoveAnnotation)
+SubClassOf(ObjectSomeValuesFrom(:atPlace :Place) :Event)
+SubClassOf(ObjectSomeValuesFrom(:atTime :TemporalExtent) :Event)
+SubClassOf(ObjectSomeValuesFrom(:containsAnnotation :HalfMoveAnnotation) :ChessGameManifestation)
+SubClassOf(ObjectSomeValuesFrom(:hasHalfMove :HalfMove) :ChessGame)
+SubClassOf(ObjectSomeValuesFrom(:hasManifestation :ChessGameManifestation) :ChessGame)
+SubClassOf(ObjectSomeValuesFrom(:hasOpening :ChessOpening) :ChessGame)
+SubClassOf(ObjectSomeValuesFrom(:hasResult :ChessGameResult) :ChessGame)
+SubClassOf(ObjectSomeValuesFrom(:nextHalfMove :HalfMove) :HalfMove)
+SubClassOf(ObjectSomeValuesFrom(:partOf :ChessCompetitionSeries) :ChessCompetitionInstance)
+SubClassOf(ObjectSomeValuesFrom(:performedBy :Agent) :AgentRole)
+SubClassOf(Annotation(rdfs:comment "This is a guarded domain restriction for providesAgentRole with HalfMove as the domain. The corresponding guarded range restriction since HalfMove may provide roles of types other than ActingPlayerRole") ObjectSomeValuesFrom(:providesAgentRole :ActingPlayerRole) :HalfMove)
+SubClassOf(Annotation(rdfs:comment "This is the guarded domain restriction for providesAgentRole with ChessGameManifestation as the domain. The corresponding guarded range restriction for the property is not asserted since ChessGameManifestation may provide roles of types other than AuthorRole") ObjectSomeValuesFrom(:providesAgentRole :AuthorRole) :ChessGameManifestation)
+SubClassOf(Annotation(rdfs:comment "This is a guarded domain restriction for providesAgentRole with ChessGame as the domain. Note that the corresponding guarded range restriction is not asserted since ChessGame may provide roles of types other than WhitePlayerRole and BlackPlayerRole") ObjectSomeValuesFrom(:providesAgentRole ObjectUnionOf(:BlackPlayerRole :WhitePlayerRole)) :ChessGame)
+SubClassOf(ObjectSomeValuesFrom(:subEventOf :ChessCompetitionInstance) :ChessCompetitionRound)
+SubClassOf(ObjectSomeValuesFrom(:subEventOf :ChessCompetitionRound) :ChessGame)
+SubClassOf(ObjectSomeValuesFrom(:subEventOf :ChessGame) :HalfMove)
+SubClassOf(ObjectSomeValuesFrom(:subEventOf :Event) :Event)
+SubClassOf(DataSomeValuesFrom(:encodedAsSAN xsd:string) :ChessGameResult)
+SubClassOf(DataSomeValuesFrom(:hasContent xsd:string) :HalfMoveAnnotation)
+SubClassOf(DataSomeValuesFrom(:hasECOCode xsd:string) :ChessOpening)
+SubClassOf(DataSomeValuesFrom(:hasOpeningName xsd:string) :ChessOpening)
+SubClassOf(DataSomeValuesFrom(:hasPGNFile xsd:anyURI) :ChessGameManifestation)
+SubClassOf(DataSomeValuesFrom(:hasSANRecord xsd:string) :HalfMove)
+SubClassOf(DataSomeValuesFrom(:originatesFrom xsd:anyURI) :ChessGameManifestation)
+)
