@@ -78,7 +78,7 @@ Jar file of ODPReco has been created and the user can run the jar file on comman
  
  Open command line and go to the location where this folder is saved. After entering into the folder, follow the sequence as mentioned below-
  
- cd corenlp_123  
+ cd ODPReco  
  
  mvn compile
  
@@ -88,7 +88,7 @@ Jar file of ODPReco has been created and the user can run the jar file on comman
  
  Copy the resources folder (present in corenlp_123 folder) into the target folder and change the path in command line to target folder by entering cd target
  
- jar file can be executed from this folder by using the command - java -jar odpreco-with-dependencies.jar
+ jar file can be executed from this folder by using the command - java -jar NameOfJar.jar
  
  After entering this command, the user is asked to enter the description, competency questions and the OWL file path. It is mandatory to enter the OWL file path, the description and competency questions can be skipped. Recomemndations follow after user enters the input.
  
