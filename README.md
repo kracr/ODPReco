@@ -70,7 +70,7 @@ The necessary condition for using this tool is to upload the OWL file. If the OW
 
  &nbsp; &nbsp; a. Prerequisites:
  
- The user must have java installed in the system inorder to run the tool. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to enter the description for that ontology along with the competency questions.
+ The user must have java installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to enter the description for that ontology along with the competency questions.
  
  &nbsp; &nbsp; b. Execution Procedure:
  
