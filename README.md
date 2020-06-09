@@ -58,7 +58,7 @@ Competency Questions are considered to be important for an ontology. The compete
 
 The signature of the ontology is compared with the signature of ODPs present in our collection. The signature includes the names of the classes, properties and instances of an ontology. Apart from the signature, description (brief overview) of the ontology is also used in this analysis.
 
-After doing the analysis of these three dimensions, the numeric values obtained are added for each listed ODP. So, we obtain 73 values (of ODPs) against an ontology. The values obtained are normalized so that they can be ranged between 0-1.  The threshold for recommending an ODP is set at .8. Hence, all the ODPs having value >= .8 is listed in the recommendation. 
+After doing the analysis of these three dimensions, the numeric values obtained are added for each listed ODP. So, we obtain 73 values (of ODPs) against an ontology. The values obtained are normalized so that they can be ranged between 0-1.  The threshold for recommending an ODP is set at .8. Hence, all the ODPs having value >= .8 are listed in the recommendation. 
 
 The 73 ODPs that are considered in our tool are available with the OWL file, Competency Questions and the Description.
 
@@ -66,11 +66,11 @@ The necessary condition for using this tool is to upload the OWL file. If the OW
 
 # USAGE
 
-Jar file of ODPReco has been created and the user can run the jar file on command line to know the ODP recommendations for the given ontology.
+
 
  &nbsp; &nbsp; a. Prerequisites:
  
- The user must have java installed in the system inorder to run the jar file. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to enter the description for that ontology along with the competency questions.
+ The user must have java installed in the system inorder to run the tool. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to enter the description for that ontology along with the competency questions.
  
  &nbsp; &nbsp; b. Execution Procedure:
  
@@ -86,11 +86,11 @@ Jar file of ODPReco has been created and the user can run the jar file on comman
  
  After this step, the jar file alongwith dependencies will be created in target folder. 
  
- Copy the resources folder (present in corenlp_123 folder) into the target folder and change the path in command line to target folder by entering cd target
+ Copy the resources folder (present in ODPReco folder) into the target folder and change the path in command line to target folder by entering - cd target
  
  jar file can be executed from this folder by using the command - java -jar NameOfJar.jar
  
- After entering this command, the user is asked to enter the description, competency questions and the OWL file path. It is mandatory to enter the OWL file path, the description and competency questions can be skipped. Recomemndations follow after user enters the input.
+ After entering this command, the user is asked to enter the description, competency questions and the OWL file path. It is mandatory to enter the OWL file path; the description and competency questions can be skipped. Recomemndations follow after user enters the input.
  
  After ODPReco has recommended ODPs, kindly fill this form https://forms.gle/SV3vgdsDqJ8hMVw68 .It is user feedback form.
  
@@ -177,7 +177,7 @@ These scores and relevance is provided by us only. We intent to do a user study 
 # FUTURE WORK
 
 ODPReco tool can be made as a plug-in in protégé so that the user can get the recommendations on the protégé platform only.
-Also, for recommendation, other software pattern approaches can be followed so that the efficiency of ODPReco increases.
+Also, for recommendation, other software pattern approaches can be used so that the efficiency of ODPReco increases.
 
 
 
