@@ -95,7 +95,10 @@ This repository has the java code for the ODPReco tool under 'src/main/java/reco
  Copy the resources folder (present in ODPReco folder) into the target folder and change the path in command line to target folder by entering - cd target
  
  jar file can be executed from this folder by using the command : 
+ 
  java -jar odpreco.jar -ontdes [des.txt] -ontcq [cq.txt] -ontowl [ont.owl]
+ 
+ ontdes takes the description file as argument, ontcq takes competency question file of the ontology as input and ontowl takes the ontology file as input.
  
  It is mandatory to enter the OWL file path; the description and competency questions can be skipped by leaving the square brackets empty or keeping their files empty. 
  
