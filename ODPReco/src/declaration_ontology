@@ -1,1 +1,0 @@
-DisjointClasses(<beAWARE_ontology#Asset> <beAWARE_ontology#LivingBeing>)DisjointClasses(<beAWARE_ontology#ImageAnalysis> <beAWARE_ontology#TextAnalysis> <beAWARE_ontology#VideoAnalysis>)DisjointClasses(<beAWARE_ontology#AudioItem> <beAWARE_ontology#ImageItem> <beAWARE_ontology#TextItem> <beAWARE_ontology#VideoItem>)
