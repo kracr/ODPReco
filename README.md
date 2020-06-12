@@ -68,7 +68,7 @@ The necessary condition for using this tool is to upload the OWL file. If the OW
 
 # About the Repository
 
-This repository has the java code for the ODPReco tool under the 'odpreco' folder. Under the 'resources' folder it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective files.
+This repository has the java code for the ODPReco tool under 'src/main/java/reco' folder. Under the 'resources' folder it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective files.
 
 # USAGE
 
