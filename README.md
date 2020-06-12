@@ -15,9 +15,11 @@ iv. Usage
 
 &nbsp; &nbsp; &nbsp; b. Execution Procedure
 
-iv.	Examples
+v. About the Repository
 
-v.	Future Work
+vi.	Examples
+
+vii.	Future Work
 
 
 # INTRODUCTION
@@ -70,7 +72,7 @@ The necessary condition for using this tool is to upload the OWL file. If the OW
 
  &nbsp; &nbsp; a. Prerequisites:
  
- The user must have java installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to enter the description for that ontology along with the competency questions.
+ The user must have java installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to pass the description file for that ontology along with the competency questions file. 
  
  &nbsp; &nbsp; b. Execution Procedure:
  
@@ -88,12 +90,18 @@ The necessary condition for using this tool is to upload the OWL file. If the OW
  
  Copy the resources folder (present in ODPReco folder) into the target folder and change the path in command line to target folder by entering - cd target
  
- jar file can be executed from this folder by using the command - java -jar NameOfJar.jar
+ jar file can be executed from this folder by using the command : 
+ java -jar odpreco.jar -ontdes [des.txt] -ontcq [cq.txt] -ontowl [ont.owl]
  
- After entering this command, the user is asked to enter the description, competency questions and the OWL file path. It is mandatory to enter the OWL file path; the description and competency questions can be skipped. Recomemndations follow after user enters the input.
+ It is mandatory to enter the OWL file path; the description and competency questions can be skipped by leaving the square brackets empty or keeping their files empty. 
+ 
+ Recomemndations follow after user enters the input.
  
  After ODPReco has recommended ODPs, kindly fill this form https://forms.gle/SV3vgdsDqJ8hMVw68 .It is user feedback form.
  
+# About the Repository
+
+This repository has the java code for the ODPReco tool under the 'odpreco' folder. Under the 'resources' folder it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective files.
  
 # EXAMPLES
 
