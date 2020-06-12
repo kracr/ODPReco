@@ -9,13 +9,13 @@ ii.	 Goal
 
 iii. Approach
 
-iv. Usage
+iv. About the Repository
+
+v. Usage
 
 &nbsp; &nbsp; &nbsp; a. Prerequisites
 
 &nbsp; &nbsp; &nbsp; b. Execution Procedure
-
-v. About the Repository
 
 vi.	Examples
 
@@ -66,6 +66,10 @@ The 73 ODPs that are considered in our tool are available with the OWL file, Com
 
 The necessary condition for using this tool is to upload the OWL file. If the OWL file of an ontology is not provided, then our tool will not be able to provide any recommendations. However, if the description or competency questions of an ontology aren’t available, then still the ODP recommendation is made. 
 
+# About the Repository
+
+This repository has the java code for the ODPReco tool under the 'odpreco' folder. Under the 'resources' folder it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective files.
+
 # USAGE
 
 
@@ -98,10 +102,6 @@ The necessary condition for using this tool is to upload the OWL file. If the OW
  Recomemndations follow after user enters the input.
  
  After ODPReco has recommended ODPs, kindly fill this form https://forms.gle/SV3vgdsDqJ8hMVw68 .It is user feedback form.
- 
-# About the Repository
-
-This repository has the java code for the ODPReco tool under the 'odpreco' folder. Under the 'resources' folder it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective files.
  
 # EXAMPLES
 
