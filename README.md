@@ -76,7 +76,7 @@ This repository has all the relevant files related to ODPReco tool. The java cod
 
  &nbsp; &nbsp; a. Prerequisites:
  
- The user must have java (version 1.8) installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to pass the description file for that ontology along with the competency questions file. 
+ The user must have java (JVM 1.8) installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to pass the description file for that ontology along with the competency questions file. 
  
  &nbsp; &nbsp; b. Execution Procedure:
  
