@@ -68,7 +68,7 @@ The necessary condition for using this tool is to upload the OWL file. If the OW
 
 # About the Repository
 
-This repository has the java code for the ODPReco tool under 'src/main/java/reco' folder. Under the 'resources' folder it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective files.
+This repository has all the relevant files related to ODPReco tool. The java code for ODPReco is under the recommender package which is present in 'src' folder. Under the 'resources' folder, it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective associated files. The pom file that is used for compiling and building this tool is also presnt separately. Under the 'META-INF' folder, manifest file is present which contains the details about the main class. The 'target' folder is used to store the jar file when this tool is compiled. Pdf file of ODPList is present. This pdf has the description of all the 73 ODPs that are used in our tool.
 
 # USAGE
 
@@ -76,7 +76,7 @@ This repository has the java code for the ODPReco tool under 'src/main/java/reco
 
  &nbsp; &nbsp; a. Prerequisites:
  
- The user must have java installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to pass the description file for that ontology along with the competency questions file. 
+ The user must have java (version 1.8) installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to pass the description file for that ontology along with the competency questions file. 
  
  &nbsp; &nbsp; b. Execution Procedure:
  
@@ -84,7 +84,7 @@ This repository has the java code for the ODPReco tool under 'src/main/java/reco
  
  Open command line and go to the location where this folder is saved. After entering into the folder, follow the sequence as mentioned below-
  
- cd ODPReco  
+ cd ODPReco-master  
  
  mvn compile
  
@@ -92,17 +92,25 @@ This repository has the java code for the ODPReco tool under 'src/main/java/reco
  
  After this step, the jar file alongwith dependencies will be created in target folder. 
  
- Copy the resources folder (present in ODPReco folder) into the target folder and change the path in command line to target folder by entering - cd target
+ Copy the resources folder (present in -master folder) into the target folder and change the path in command line to target folder by entering - cd target
  
  jar file can be executed from this folder by using the command : 
  
- java -jar odpreco.jar -ontdes [des.txt] -ontcq [cq.txt] -ontowl [ont.owl]
+ java -jar recommender-0.0.1-SNAPSHOT-jar-with-dependencies.jar -ontdes [des.txt] -ontcq [cq.txt] -ontowl [owl.txt]
  
  ontdes takes the description file as argument, ontcq takes competency question file of the ontology as input and ontowl takes the ontology file as input.
  
  It is mandatory to enter the OWL file path; the description and competency questions can be skipped by leaving the square brackets empty or keeping their files empty. 
  
+ 
  Recomemndations follow after user enters the input.
+ 
+ Example:
+ 
+ java -jar recommender-0.0.1-SNAPSHOT-jar-with-dependencies.jar -ontdes [] -ontcq [] -ontowl [C:\Users\Admin\Desktop\Ontology\population_ontology.owl]
+ 
+ In this example, description and competency questions aren't passed as input and only the ontology file is passed as the input.
+ 
  
  After ODPReco has recommended ODPs, kindly fill this form https://forms.gle/SV3vgdsDqJ8hMVw68 .It is user feedback form.
  
