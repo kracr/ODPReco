@@ -88,7 +88,7 @@ public class StartODPReco {
 	     //asking the user to wait for few seconds 
 		     PrintStream wait=new PrintStream(new FileOutputStream(FileDescriptor.out)); 
 		 	 System.setOut(wait); 
-		 	 System.out.println("Ontology has been stored");
+		 	 System.out.println("Ontology has been read");
 		 	 System.out.println("Recommendations will follow in some seconds...");
 	       
 	    
