@@ -96,7 +96,7 @@ This repository has all the relevant files related to ODPReco tool. The java cod
  
  jar file can be executed from this folder by using the command : 
  
- java -jar recommender-0.0.1-SNAPSHOT-jar-with-dependencies.jar -ontdes [des.txt] -ontcq [cq.txt] -ontowl [owl.txt]
+ java -jar recommender-0.0.1-SNAPSHOT-jar-with-dependencies.jar -ontdes [des.txt] -ontcq [cq.txt] -ontowl [ontology.owl]
  
  ontdes takes the description file as argument, ontcq takes competency question file of the ontology as input and ontowl takes the ontology file as input.
  
