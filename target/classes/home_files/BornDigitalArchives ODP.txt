@@ -1,0 +1,8 @@
+[<#Creator>,<#File>,<#Fonds>,<#Item>,<#Series>,<#Unit>,</foaf/0.1/Agent>,<#hasCreator>,<#hasPart>,<#coversRequirements>,<#hasConsequences>,<#hasIntent>,<#scenarios>
+
+ObjectPropertyDomain(<BornDigitalArchives_ODP#hasPart> <BornDigitalArchives_ODP#Unit>)ObjectPropertyDomain(<BornDigitalArchives_ODP#hasCreator> <BornDigitalArchives_ODP#Unit>)
+
+
+ObjectPropertyRange(<BornDigitalArchives_ODP#hasPart> <BornDigitalArchives_ODP#Unit>)ObjectPropertyRange(<BornDigitalArchives_ODP#hasCreator> <BornDigitalArchives_ODP#Creator>)
+
+SubClassOf(<BornDigitalArchives_ODP#Creator> <Agent>)SubClassOf(<BornDigitalArchives_ODP#File> <BornDigitalArchives_ODP#Unit>)SubClassOf(<BornDigitalArchives_ODP#Fonds> <BornDigitalArchives_ODP#Unit>)SubClassOf(<BornDigitalArchives_ODP#Series> <BornDigitalArchives_ODP#Unit>)SubClassOf(<BornDigitalArchives_ODP#Item> <BornDigitalArchives_ODP#Unit>)

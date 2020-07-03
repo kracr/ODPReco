@@ -1,0 +1,6 @@
+[<#AquaticSpecies>, <#GearType>, <#GearType>, <#VesselType>, <#catchesSpecies>, <#isCaughtBy>, <#isCaughtByVesselType>, <#coversRequirements>, <#hasComponent>, <#hasConsequences>, <#hasIntent>]
+
+ObjectPropertyDomain(<vesselspecies.owl#isCaughtBy> <aquaticresources.owl#AquaticSpecies>)ObjectPropertyDomain(<vesselspecies.owl#isCaughtByVesselType> <aquaticresources.owl#AquaticSpecies>)ObjectPropertyDomain(<vesselspecies.owl#catchesSpecies> owl:Thing)
+
+ObjectPropertyRange(<vesselspecies.owl#isCaughtBy> owl:Thing)ObjectPropertyRange(<vesselspecies.owl#isCaughtByVesselType> <gearvessel.owl#VesselType>)ObjectPropertyRange(<vesselspecies.owl#catchesSpecies> <aquaticresources.owl#AquaticSpecies>)
+

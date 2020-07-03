@@ -1,0 +1,6 @@
+Chess ODP(<http://purl.org/NET/rdfchess/ontology/>) 
+Chess ODP(<http://purl.org/NET/rdfchess/ontology/>) 
+ParticipantRole ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole>)
+AgentRole ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole>)
+Event ODP(<http://w3id.org/daselab/onto/event>) 
+Event MODL ODP<https://archive.org/services/purl/domain/modular_ontology_design_library/event>)
