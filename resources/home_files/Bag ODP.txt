@@ -1,0 +1,3 @@
+[<bag#Bag>, <bag#BagItem>, <bag#Collection>, <bag#itemOf>, <bag#po-member>, <http://ontologydesignpatterns.org/opla#hasRelatedPattern>, <http://ontologydesignpatterns.org/opla#isNativeTo>, <http://ontologydesignpatterns.org/opla#ofExternalType>, rdfs:Literal]
+
+SubClassOf(<bag#Bag> <bag#Collection>)SubClassOf(<bag#Bag> ObjectAllValuesFrom(<bag#itemOf> <bag#BagItem>))SubClassOf(ObjectSomeValuesFrom(<bag#itemOf> <bag#BagItem>) <bag#Bag>)

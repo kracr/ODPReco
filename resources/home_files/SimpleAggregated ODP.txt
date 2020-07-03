@@ -1,0 +1,7 @@
+[<#AggregatedObject>,<#Object>,<#ObjectByCardinality>,<#SimpleObject>,<#hasAggregatedMember>,<#hasDirectAggregatedMember>,<#isAggregatedMemberOf>,<#isDirectAggregatedMemberOf>,<#coversRequirements>,<#hasConsequences>]
+
+ObjectPropertyDomain(<SimpleOrAggregated.owl#hasAggregatedMember> <SimpleOrAggregated.owl#AggregatedObject>)ObjectPropertyDomain(<SimpleOrAggregated.owl#isAggregatedMemberOf> <SimpleOrAggregated.owl#Object>)
+
+ObjectPropertyRange(<SimpleOrAggregated.owl#hasAggregatedMember> <SimpleOrAggregated.owl#Object>)ObjectPropertyRange(<SimpleOrAggregated.owl#isAggregatedMemberOf> <SimpleOrAggregated.owl#AggregatedObject>)
+
+SubClassOf(<SimpleOrAggregated.owl#AggregatedObject> <SimpleOrAggregated.owl#ObjectByCardinality>)SubClassOf(<SimpleOrAggregated.owl#SimpleObject> <SimpleOrAggregated.owl#ObjectByCardinality>)

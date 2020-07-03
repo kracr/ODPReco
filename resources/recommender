@@ -1,0 +1,6 @@
+Reaction ODP(<http://www.ontologydesignpatterns.org/cp/reaction.owl>)
+Toco ODP(<http://purl.org/toco/>)
+ListManchester ODP(<http://www.gong.manchester.ac.uk/odp/owl/Domain_Modelling_ODP/List.owl>) 
+ParticipantRole ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole>)
+TemporalExtent ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent>) 
+Trajectory MODL ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory>) 
