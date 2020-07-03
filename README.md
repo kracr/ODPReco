@@ -105,7 +105,7 @@ This repository has all the relevant files related to ODPReco tool. The java cod
  It is mandatory to enter the OWL file path; the description and competency questions can be skipped by leaving the square brackets empty or keeping their files empty. 
  
  
- Recomemndations follow after user enters the input.
+ Recommendations follow after user enters the input.
  
  Example:
  
