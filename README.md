@@ -13,7 +13,7 @@ iv. [About the Repository](#About-the-Repository)
 
 v. [Usage](#Usage)
 
-v.i [Prerequisites](#a.-Prerequisites-:)
+v.i [Prerequisites](#Prerequisites)
 
 vi.	[Examples](#Examples)
 
