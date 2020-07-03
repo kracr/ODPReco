@@ -9,7 +9,7 @@ ii.	[Goal](#Goal)
 
 iii. [Approach](#Approach)
 
-iv. [About the Repository](#AbouttheRepository)
+iv. [About the Repository](#About-the-Repository)
 
 v. [Usage](#Usage)
 
