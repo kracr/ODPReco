@@ -42,11 +42,13 @@ In order to recommend ODPs, ODPReco maintains a list of avaiable ODPs. The detai
 
 # APPROACH
 
-The ODPs are recommended on the basis of 3 analysis - structural, behavioural and lexical.
+The ODPs are recommended on the basis of 3 analysis - structural, behavioural and lexical. 
+
+The analysis is done using two approaches- Doc2Vec and Lucene approach. Both the approaches are executed and the top recomemndations from them are displayed. 
 
 *Structural Analysis-*
 
-It is the one in which the OWL file of the given ontology is compared with the OWL file of all the listed ODPs. This is done via Doc2Vec. The OWL file is analysed by its properties- SubClass, ObjectPropertyDomain, ObjectPropertyRange, DisjointClasses, etc. The axioms of the ontology are extracted using the OWL API.
+It is the one in which the OWL file of the given ontology is compared with the OWL file of all the listed ODPs. This is done via Doc2Vec. The OWL file is analysed by its properties- SubClass, ObjectPropertyDomain, ObjectPropertyRange, DisjointClasses, etc. The axioms of the ontology are extracted using the OWL API. Apart from the axioms, the structure of the ontology is also analysed through its graph.
 
 *Behavioural Analysis-*
 
@@ -57,6 +59,10 @@ Competency Questions are considered to be important for an ontology. The compete
 The signature of the ontology is compared with the signature of ODPs present in our collection. The signature includes the names of the classes, properties and instances of an ontology. Apart from the signature, description (brief overview) of the ontology is also used in this analysis.
 
 After doing the analysis of these three dimensions, the numeric values obtained are added for each listed ODP. So, we obtain 73 values (of ODPs) against an ontology. The values obtained are normalized so that they can be ranged between 0-1.  The threshold for recommending an ODP is set at .8. Hence, all the ODPs having value >= .8 are listed in the recommendation. 
+
+Lucene approach is also implemented for the recommendations. In this approach, ODPs are recommended based on the structural analysis only. ODP files (73 in number) are maintained. Each file contains the signature and the axioms. The user ontology is mapped with these ODP files using lucene in order to determine the relevant ODPs for the given ontology. Top 5 recommendations from this approach are integrated with the previous approach and displayed to the user.
+
+The recommendations from both the approaches are combined together and displayed to the user.
 
 The 73 ODPs that are considered in our tool are available with the OWL file, Competency Questions and the Description.
 
@@ -120,9 +126,11 @@ It is the content ontology pattern present in the ODP repository. We have used t
 
 
 
-| Ontology   |    	Score	  | Relevant/Not Relevant	   | Comment                                        |
-|------------|--------------|--------------------------|------------------------------------------------|
-|  Chess ODP |        1	    |     Yes	                 |                                                |
+| Ontology   |    	Relevant/Not Relevant	   | Comment                                        |
+|------------|------------------------------|------------------------------------------------|
+|  Chess ODP |         Yes	                 |            -                                   |
+| Agent-Role |         Yes                  |            -                                   |
+| Event ODP  |         Yes                  |            -                                   |
 
 As Chess ODP is recommended, it suggests that our tool is showing relevant results. Also, other ODPs like - Task-Role, Event that can be used in Chess pattern  have recommendation scores between 0.65 - 0.78.
 
@@ -134,26 +142,26 @@ No CQs are present for this ontology. So, we tested our tool in two ways- first 
 
 The results obtained with OWL file - 
 
-|    Ontology	                 |     Score	  |    Relevant/Not Relevant	|      Comment                                   |
-|------------------------------|--------------|---------------------------|------------------------------------------------|
-|Spatio-Temporal Extent ODP	   |     .90      |     yes	                  |         -                                      |
-|     Chess ODP                |     .89	    |     yes	                  |      as it uses concept of events              |
-|     Place ODP                |	   .83	    |      yes                  |                 -                              |
-|   Temporal Extent ODP        |	   .82      |      yes	                |                 -                              |
-|   Entity-Feature ODP         |	   .81      |	     no                   |  covers cell features in biological domain     |
-|      Toco                    |	    .8	    |      no	                  |  as used with telecommunication                |                         
+|    Ontology	                 |     Relevant/Not Relevant	|      Comment                                   |
+|------------------------------|---------------------------|------------------------------------------------|
+|Spatio-Temporal Extent ODP	   |      yes	                 |         -                                      |
+|     Chess ODP                |      yes	                 |      as it uses concept of events              |
+|     Place ODP                |	     yes                  |                 -                              |
+|   Temporal Extent ODP        |	     yes	                 |                 -                              |
+|   Entity-Feature ODP         |	     no                   |  covers cell features in biological domain     |
+|      Toco                    |	     no	                  |  as used with telecommunication                |                         
 
 The results obtained when OWL file and description are passed to ODPReco-
 
 
-|    Ontology	                 |     Score	  |    Relevant/Not Relevant	|      Comment                                   |
-|------------------------------|--------------|---------------------------|------------------------------------------------|
-|Spatio-Temporal Extent ODP	   |     .90      |     yes	                  |         -                                      |
-|     Chess ODP                |     .89	    |     yes	                  |      as it uses concept of events              |
-|     Place ODP                |	   .83	    |      yes                  |                 -                              |
-|   Temporal Extent ODP        |	   .82      |      yes	                |                 -                              |
-|    Tagging ODP               |      .81     |      yes                  |    uses agent-role concept in it               |
-|   Entity-Feature ODP         |	   .81      |	     no                   |  covers cell features in biological domain     |
+|    Ontology	                 |     Relevant/Not Relevant	 |      Comment                                   |
+|------------------------------|----------------------------|------------------------------------------------|
+|Spatio-Temporal Extent ODP	   |       yes	                 |         -                                      |
+|     Chess ODP                |       yes	                 |      as it uses concept of events              |
+|     Place ODP                |	      yes                  |                 -                              |
+|   Temporal Extent ODP        |	      yes	                 |                 -                              |
+|    Tagging ODP               |       yes                  |    uses agent-role concept in it               |
+|   Entity-Feature ODP         |	      no                   |  covers cell features in biological domain     |
 
 When both, OWL file and description are passed to ODPReco, it gives moderatley better results.
 
@@ -161,28 +169,28 @@ When both, OWL file and description are passed to ODPReco, it gives moderatley b
 
 It is a crisis management ontology for climate related natural disasters. It consists of climatic disasters, analysis of data from sensors and rescue team assignments. This ontology has OWL file, description as well as CQs. We ran 4 tests on this ontology- one only with OWL file, other with OWL file and description , third one with OWL file and CQs and the last with all the three. The best recommendation results were shown when all the dimensions were tested. The results are as-
 
-|       Ontology	             |     Score	  |    Relevant/Not Relevant	|      Comment                                   |
-|------------------------------|--------------|---------------------------|------------------------------------------------|
-|  Hazardous ODP	             |     .90      |     yes	                  |         -                                      |
-|     DUL ODP                  |     .89	    |     yes	                  |      describes object, event,, region          |
-|     Place ODP                |	   .86	    |      yes                  |                 -                              |
-|   Task RoleODP               |	   .85      |      yes	                |     assigning tasks to roles                   |
-|    TaskExecution ODP         |     .82      |      yes                  |       tasks are used                           |
-|  Spatio-Temporal ODP         |     .81      |      yes                  |       time concept is used                     |
-|   Policy ODP                 |	   .81      |	     no                   |         -                                      |
+|       Ontology	              | Relevant/Not Relevant	 |      Comment                                   |
+|------------------------------|------------------------|------------------------------------------------|
+|  Hazardous ODP	              |        yes	            |         -                                      |
+|     DUL ODP                  |        yes	            |      describes object, event,, region          |
+|     Place ODP                |	       yes             |                 -                              |
+|   Task RoleODP               |	       yes	            |     assigning tasks to roles                   |
+|    TaskExecution ODP         |        yes             |       tasks are used                           |
+|  Spatio-Temporal ODP         |        yes             |       time concept is used                     |
+|   Policy ODP                 |	       no              |         -                                      |
 
 
 4.	Radiation Ontology:
 
 It has been taken from NCBIO. The OWL file and the description were given to ODPReco tool.
 
-|Ontology	   |     Score	  |    Relevant/Not Relevant	|      Comment                                   |
-|------------|--------------|---------------------------|------------------------------------------------|
-|    DUL	   |      1	      |     yes	                  |         Event, Agent, Activity                 |
-|Componency	 |     .93	    |     yes	                  |      isPartOf, isComponentOf                   |
-|Gear Species|	   .88	    |      no	                  |                 -                              |
-|Invoice     |	   .84	    |      no	                  |                 -                              |
-|News Report |	   .81      |	     yes	                |        Agent, Event, Situation                 |
+|Ontology	   |       Relevant/Not Relevant	|      Comment                                   |
+|------------|---------------------------- |------------------------------------------------|
+|    DUL	    |       yes	                  |         Event, Agent, Activity                 |
+|Componency	 |       yes	                  |      isPartOf, isComponentOf                   |
+|Gear Species|	       no	                  |                 -                              |
+|Invoice     |	       no	                  |                 -                              |
+|News Report |	      yes	                  |        Agent, Event, Situation                 |
 
 
 
