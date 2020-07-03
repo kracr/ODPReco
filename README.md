@@ -5,21 +5,21 @@ ODPReco is a tool for recommending ODPs (Ontology Design Patterns) to a given on
 
 i.	[Introduction](#Introduction)
 
-ii.	 Goal
+ii.	[Goal](#Goal)
 
-iii. Approach
+iii. [Approach](#Approach)
 
-iv. About the Repository
+iv. [About the Repository](#About the Repository)
 
-v. Usage
+v. [Usage](#Usage)
 
-&nbsp; &nbsp; &nbsp; a. Prerequisites
+&nbsp; &nbsp; &nbsp; a. [Prerequisites](#Prerequisites)
 
-&nbsp; &nbsp; &nbsp; b. Execution Procedure
+&nbsp; &nbsp; &nbsp; b. [Execution Procedure](#Execution Procedure)
 
-vi.	Examples
+vi.	[Examples](#Examples)
 
-vii.	Future Work
+vii.	[Future Work](#Future Work)
 
 
 # INTRODUCTION
