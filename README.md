@@ -15,11 +15,11 @@ v. [Usage](#Usage)
 
 &nbsp; &nbsp; &nbsp; a. [Prerequisites](#Prerequisites)
 
-&nbsp; &nbsp; &nbsp; b. [Execution Procedure](#Execution Procedure)
+&nbsp; &nbsp; &nbsp; b. [Execution Procedure](#Execution-Procedure)
 
 vi.	[Examples](#Examples)
 
-vii.	[Future Work](#Future Work)
+vii.	[Future Work](#Future-Work)
 
 
 # INTRODUCTION
