@@ -13,7 +13,8 @@ iv. [About the Repository](#About-the-Repository)
 
 v. [Usage](#Usage)
 
-&nbsp; &nbsp; &nbsp;  [Prerequisites](#a. Prerequisites)
+ 
+ [Prerequisites](# &nbsp; &nbsp; a. Prerequisites :)
 
 &nbsp; &nbsp; &nbsp; b. [Execution Procedure](#Execution-Procedure)
 
