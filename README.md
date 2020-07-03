@@ -13,11 +13,6 @@ iv. [About the Repository](#About-the-Repository)
 
 v. [Usage](#Usage)
 
- 
- [Prerequisites](#  a. Prerequisites :)
-
-&nbsp; &nbsp; &nbsp; b. [Execution Procedure](#Execution-Procedure)
-
 vi.	[Examples](#Examples)
 
 vii.	[Future Work](#Future-Work)
@@ -79,7 +74,7 @@ This repository has all the relevant files related to ODPReco tool. The java cod
  
  The user must have java installed in the system inorder to run the tool. Apart from java, maven should also be installed in the system. Inorder to know the recommendations for an ontology, owl file for that ontology should be avaiable. OWL file can be constructed in protégé. Also, the user has to pass the description file for that ontology along with the competency questions file. 
  
- &nbsp; &nbsp; b. # Execution Procedure :
+ # &nbsp; &nbsp; b. Execution Procedure :
  
  Clone this project and download its zip folder. Extract it and save it in a folder.
  
