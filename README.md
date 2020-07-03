@@ -3,7 +3,7 @@ ODPReco is a tool for recommending ODPs (Ontology Design Patterns) to a given on
 
 # Table of Contents:
 
-i.	Introduction
+i.	[Introduction](#Introduction)
 
 ii.	 Goal
 
