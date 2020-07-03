@@ -107,11 +107,19 @@ This repository has all the relevant files related to ODPReco tool. The java cod
  
  Recommendations follow after user enters the input.
  
- Example:
+ Examples:
  
- java -jar odpreco.jar -ontdes [] -ontcq [] -ontowl [C:\Users\Admin\Desktop\Ontology\population_ontology.owl]
+ 1. java -jar odpreco.jar -ontdes [] -ontcq [] -ontowl [C:\Users\Admin\Desktop\Ontology\population_ontology.owl]
  
  In this example, description and competency questions aren't passed as input and only the ontology file is passed as the input.
+ 
+ 2. java -jar odpreco.jar -ontdes [C:\Users\Admin\Desktop\des.txt] -ontcq [] -ontowl [C:\Users\Admin\Desktop\Ontology\population_ontology.owl]
+ 
+ In this example, description and owl file of the ontology is passed as input.
+ 
+ 3. java -jar odpreco.jar -ontdes [C:\Users\Admin\Desktop\des.txt] -ontcq [C:\Users\Admin\Desktop\cq.txt] -ontowl [C:\Users\Admin\Desktop\Ontology\population_ontology.owl]
+ 
+ In this example, all the three dimensions are passed as input.
  
  
  After ODPReco has recommended ODPs, kindly fill this form https://forms.gle/SV3vgdsDqJ8hMVw68 .It is user feedback form.
