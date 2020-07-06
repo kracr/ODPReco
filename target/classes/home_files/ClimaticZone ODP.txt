@@ -1,7 +1,0 @@
-[<#AquaticResource>, <#AquaticResourceObservation>, <#ClimaticZone>, <#Observation>, <#hasClimaticZone>, <#hasResource>, <#isClimaticZoneOf>,<#isResourceOf>, <#hasObservation>,<#hasParameter>,<#isObservationOf>, <#isParameterOf>, <#hasReferenceYear>, <#coversRequirements>,<#hasConsequences>, <#hasIntent>, <#hasUnitTest> 
-
-  (<climaticzone.#isClimaticZoneOf> <climaticzone.#ClimaticZone>)  (<climaticzone.#hasClimaticZone> <climaticzone.#AquaticResourceObservation>)  (<climaticzone.#isResourceOf> <climaticzone.#AquaticResource>)  (<climaticzone.#hasResource> <climaticzone.#AquaticResourceObservation>)
-
-  (<climaticzone.#isResourceOf> <climaticzone.#AquaticResourceObservation>)  (<climaticzone.#isClimaticZoneOf> <climaticzone.#AquaticResourceObservation>)  (<climaticzone.#hasResource> <climaticzone.#AquaticResource>)  (<climaticzone.#hasClimaticZone> <climaticzone.#ClimaticZone>)
-
-  (<climaticzone.#AquaticResourceObservation> <observation.#Observation>)  (<climaticzone.#AquaticResourceObservation> ObjectSomeValuesFrom(<climaticzone.#hasResource> <climaticzone.#AquaticResource>))  (<climaticzone.#AquaticResource> :  )  (<climaticzone.#ClimaticZone> <observation.#Parameter>)  (<climaticzone.#AquaticResourceObservation> ObjectSomeValuesFrom(<climaticzone.#hasClimaticZone> <climaticzone.#ClimaticZone>))

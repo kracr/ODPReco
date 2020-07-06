@@ -1,3 +1,0 @@
-[owl:Thing, <identifier#IDType>, <identifier#Identifier>, <identifier#hasIdentifier>, <identifier#hasIdentifierType>, <identifier#identifierAsText>, <http://ontologydesignpatterns.org/opla#hasRelatedPattern>, <http://ontologydesignpatterns.org/opla#isNativeTo>, rdfs:Literal, xsd:string]
-
-SubClassOf(owl:Thing DataAllValuesFrom(<identifier#identifierAsText> xsd:string))SubClassOf(owl:Thing ObjectAllValuesFrom(<identifier#hasIdentifierType> <identifier#IDType>))SubClassOf(ObjectSomeValuesFrom(<identifier#hasIdentifierType> owl:Thing) <identifier#Identifier>)SubClassOf(owl:Thing ObjectAllValuesFrom(<identifier#hasIdentifier> <identifier#Identifier>))

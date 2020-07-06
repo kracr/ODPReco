@@ -1,7 +1,0 @@
-[<#InformationObject>,<#InformationRealization>,<#isRealizedBy>,<#realizes>,<#coversRequirements>,<#extractedFrom>,<#hasConsequences>,<#hasIntent>,<#relatedCPs>,<#scenarios>]
-
-ObjectPropertyDomain(<informationrealization.owl#realizes> <informationrealization.owl#InformationRealization>)ObjectPropertyDomain(<informationrealization.owl#isRealizedBy> <informationrealization.owl#InformationObject>)
-
-ObjectPropertyRange(<informationrealization.owl#realizes> <informationrealization.owl#InformationObject>)ObjectPropertyRange(<informationrealization.owl#isRealizedBy> <informationrealization.owl#InformationRealization>)
-
-SubClassOf(<informationrealization.owl#InformationObject> ObjectAllValuesFrom(<informationrealization.owl#isRealizedBy> <informationrealization.owl#InformationRealization>))SubClassOf(<informationrealization.owl#InformationObject> ObjectSomeValuesFrom(<informationrealization.owl#isRealizedBy> <informationrealization.owl#InformationRealization>))SubClassOf(<informationrealization.owl#InformationRealization> ObjectSomeValuesFrom(<informationrealization.owl#realizes> <informationrealization.owl#InformationObject>))

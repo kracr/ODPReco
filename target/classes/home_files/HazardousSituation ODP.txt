@@ -1,7 +1,0 @@
-[<#Cause>, <#Consequence>,<#Event>,<#Exposure>, <#Hazard>,<#HazardousEvent>, <#HazardousSituation>, <#Object>,<#TimeInterval>, <#casuallyFollows>, <#exposedTo>,<#hasDuration>,<#hasParticipants>cipant>,<#hasQuality>,<#involves>,<#participantIn>,<#hasIntent>]
-
-(<HazardousSituation#exposedTo> <HazardousSituation#Object>)
-
-(<HazardousSituation#exposedTo> <HazardousSituation#Hazard>)
-
- (<HazardousSituation#HazardousEvent> ObjectSomeValuesFrom(<HazardousSituation#casuallyFollows> <HazardousSituation#Cause>)) (<HazardousSituation#Consequence> ObjectSomeValuesFrom(<HazardousSituation#casuallyFollows> <HazardousSituation#HazardousEvent>)) (<HazardousSituation#HazardousEvent> ObjectSomeValuesFrom(<HazardousSituation#hasQuality> <HazardousSituation#Exposure>)) (<HazardousSituation#HazardousEvent> <HazardousSituation#Event>) (<HazardousSituation#HazardousSituation> ObjectSomeValuesFrom(<HazardousSituation#participantIn> <HazardousSituation#HazardousEvent>)) (<HazardousSituation#Event> ObjectSomeValuesFrom(<HazardousSituation#hasDuration> <timeinterval.owl#TimeInterval>))

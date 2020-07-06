@@ -1,7 +1,0 @@
-[<#Bag>,<#Item>,<#List>,<#ListItem>,<#hasItem>,<#itemOf>,<#firstItemOf>,<#hasFirstItem>,<#hasLastItem>,<#lastItemOf>,<#nextItem>,<#previousItem>,<#directlyFollows>,<#directlyPrecedes>, <#coversRequirements>,<#extractedFrom>,<#hasAuthor>, <#hasComponent>, <#hasIntent>,<#isSpecializationOf>]
-
-ObjectPropertyDomain(<list.owl#nextItem> <list.owl#ListItem>)ObjectPropertyDomain(<list.owl#hasFirstItem> <list.owl#List>)ObjectPropertyDomain(<list.owl#lastItemOf> <list.owl#ListItem>)ObjectPropertyDomain(<list.owl#previousItem> <list.owl#ListItem>)ObjectPropertyDomain(<list.owl#firstItemOf> <list.owl#ListItem>)ObjectPropertyDomain(<list.owl#hasLastItem> <list.owl#List>)
-
-ObjectPropertyRange(<list.owl#firstItemOf> <list.owl#List>)ObjectPropertyRange(<list.owl#hasLastItem> <list.owl#ListItem>)ObjectPropertyRange(<list.owl#hasFirstItem> <list.owl#ListItem>)ObjectPropertyRange(<list.owl#previousItem> <list.owl#ListItem>)ObjectPropertyRange(<list.owl#lastItemOf> <list.owl#List>)ObjectPropertyRange(<list.owl#nextItem> <list.owl#ListItem>)
-
-SubClassOf(<list.owl#ListItem> <bag.owl#Item>)SubClassOf(<list.owl#List> <bag.owl#Bag>)

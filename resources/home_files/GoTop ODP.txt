@@ -1,3 +1,0 @@
-[<#All>,<#BiologicalProcess>,<#CellularComponent>,<#MolecularFunction>,<#partOf>,<#coversRequirements>,<#extractedFrom>,<#hasConsequences>,<#hasIntent>, <#isCloneOf>,<#reengineeredFrom>,<#relatedCPs>,<#scenarios>] 
-
-SubClassOf(<gotop.owl#BiologicalProcess> <gotop.owl#All>)SubClassOf(<gotop.owl#CellularComponent> <gotop.owl#All>)SubClassOf(<gotop.owl#MolecularFunction> <gotop.owl#All>)
