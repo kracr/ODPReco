@@ -1,0 +1,7 @@
+[<#Concept>,<#Object>,<#Role>,<#classifies>,<#isClassifiedBy>,<#hasRole>,<#isRoleOf>,<#coversRequirements>,<#extractedFrom>,<#hasConsequences>,<#hasIntent>,<#isSpecializationOf>]
+
+ObjectPropertyDomain(<objectrole.owl#hasRole> <objectrole.owl#Object>)ObjectPropertyDomain(<objectrole.owl#isRoleOf> <objectrole.owl#Role>)
+
+ObjectPropertyRange(<objectrole.owl#hasRole> <objectrole.owl#Role>)ObjectPropertyRange(<objectrole.owl#isRoleOf> <objectrole.owl#Object>)
+
+SubClassOf(<objectrole.owl#Role> <classification.owl#Concept>)

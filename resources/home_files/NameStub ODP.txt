@@ -1,0 +1,3 @@
+[owl:Thing, <namestub#NameStub>, <namestub#nameAsString>, <http://ontologydesignpatterns.org/opla#isNativeTo>, </opla#specializationOfPattern>, rdfs:Literal, xsd:string]
+
+SubClassOf(owl:Thing DataAllValuesFrom(<namestub#nameAsString> xsd:string))
