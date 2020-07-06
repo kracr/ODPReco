@@ -1,0 +1,3 @@
+[owl:Thing, <reification#Context>, <reification#ReifiedProperty>, <reification#hasContext>, <reification#reifiedProperty1>, <reification#reifiedProperty2>, <http://ontologydesignpatterns.org/opla#isNativeTo>, rdfs:Literal]
+
+SubClassOf(owl:Thing ObjectSomeValuesFrom(<reification#hasContext> <reification#Context>))SubClassOf(owl:Thing ObjectAllValuesFrom(<reification#hasContext> <reification#Context>))SubClassOf(owl:Thing ObjectAllValuesFrom(<reification#reifiedProperty1> <reification#ReifiedProperty>))

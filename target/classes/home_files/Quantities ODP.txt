@@ -1,0 +1,3 @@
+[owl:Thing, <quantities#Quantity>, <quantities#QuantityKind>, <quantities#QuantityValue>, <quantities#Unit>, <quantities#hasQuantityKind>, <quantities#hasQuantityValue>, <quantities#hasUnit>, <quantities#hasNumericValue>, <http://ontologydesignpatterns.org/opla#isNativeTo>, <http://ontologydesignpatterns.org/opla#ofExternalType>, rdfs:Literal, xsd:double]
+
+SubClassOf(owl:Thing ObjectAllValuesFrom(<quantities#hasQuantityKind> <quantities#>

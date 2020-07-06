@@ -1,0 +1,7 @@
+[<#NaryParticipation>,<#Event>,<#Object>,<#Situation>,<#TimeInterval>,<#isIncludedInParticipation>,<#participationIncludes>,<#hasSetting>, <#isSettingFor>]
+
+ObjectPropertyDomain(<naryparticipation.owl#participationIncludes> <naryparticipation.owl#NaryParticipation>)ObjectPropertyDomain(<naryparticipation.owl#isIncludedInParticipation> owl:Thing)
+
+ObjectPropertyRange(<naryparticipation.owl#participationIncludes> owl:Thing)ObjectPropertyRange(<naryparticipation.owl#isIncludedInParticipation> <naryparticipation.owl#NaryParticipation>)
+
+SubClassOf(<naryparticipation.owl#NaryParticipation> <situation.owl#Situation>)SubClassOf(<naryparticipation.owl#NaryParticipation> ObjectSomeValuesFrom(<naryparticipation.owl#participationIncludes> <participation.owl#Event>))SubClassOf(<naryparticipation.owl#NaryParticipation> ObjectSomeValuesFrom(<naryparticipation.owl#participationIncludes> <timeinterval.owl#TimeInterval>))SubClassOf(<naryparticipation.owl#NaryParticipation> ObjectSomeValuesFrom(<naryparticipation.owl#participationIncludes> <participation.owl#Object>))

@@ -1,0 +1,5 @@
+[<#hasConstituent>,<#isConstituentOf>],rdfs:isDefinedBy
+
+ObjectPropertyDomain(<constituency.owl#hasConstituent> owl:Thing)ObjectPropertyDomain(<constituency.owl#isConstituentOf> owl:Thing)
+
+ObjectPropertyRange(<constituency.owl#hasConstituent> owl:Thing)ObjectPropertyRange(<constituency.owl#isConstituentOf> owl:Thing)
