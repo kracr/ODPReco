@@ -1,7 +1,0 @@
-[<#AquaticSpecies>,</gearspecies.owl#GearType>, <#catchesSpecies>,<#incidentallyCatchesSpecies>,<#isCaughtBy>, <#isCaughtByGearType>,<#targetsSpecies>,<#coversRequirements>,<#hasConsequences>,<#hasIntent>,<#scenarios>]
-
-ObjectPropertyDomain(<gearspecies.owl#catchesSpecies> <gearspecies.owl#GearType>)ObjectPropertyDomain(<gearspecies.owl#isCaughtByGearType> <aquaticresources.owl#AquaticSpecies>)ObjectPropertyDomain(<gearspecies.owl#incidentallyCatchesSpecies> <gearspecies.owl#GearType>)ObjectPropertyDomain(<gearspecies.owl#targetsSpecies> <gearspecies.owl#GearType>)ObjectPropertyDomain(<gearspecies.owl#isCaughtBy> <aquaticresources.owl#AquaticSpecies>)
-
-ObjectPropertyRange(<gearspecies.owl#catchesSpecies> <aquaticresources.owl#AquaticSpecies>)ObjectPropertyRange(<gearspecies.owl#isCaughtBy> <gearspecies.owl#GearType>)ObjectPropertyRange(<gearspecies.owl#incidentallyCatchesSpecies> <aquaticresources.owl#AquaticSpecies>)ObjectPropertyRange(<gearspecies.owl#targetsSpecies> <aquaticresources.owl#AquaticSpecies>)ObjectPropertyRange(<gearspecies.owl#isCaughtByGearType> <gearspecies.owl#GearType>)
-
-SubClassOf(<gearspecies.owl#GearType> owl:Thing)SubClassOf(<gearspecies.owl#GearType> ObjectSomeValuesFrom(<gearspecies.owl#targetsSpecies> <aquaticresources.owl#AquaticSpecies>))SubClassOf(<gearspecies.owl#GearType> ObjectSomeValuesFrom(<gearspecies.owl#incidentallyCatchesSpecies> <aquaticresources.owl#AquaticSpecies>))

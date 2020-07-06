@@ -1,9 +1,0 @@
-[<#Agent>,<actingfor.owl#SocialAgent>,<actingfor.owl#actsFor>, <actingfor.owl#actsThrough>, <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements>, <#hasConsequences>, <#hasIntent>, <#reengineeredFrom>, <#scenarios>]
-
-(<actingfor.owl#actsFor> <actingfor.owl#Agent>)(<actingfor.owl#actsThrough> <actingfor.owl#SocialAgent>)
-
-(<actingfor.owl#actsFor> <actingfor.owl#SocialAgent>)(<actingfor.owl#actsThrough> <actingfor.owl#Agent>)
-
-
-
-
