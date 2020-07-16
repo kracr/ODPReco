@@ -1,0 +1,4 @@
+[#Region>,<#hasRegion>,<#isRegionFor>,<#hasRegionDataValue>,<#coversRequirements>,<#extractedFrom>,<#hasConsequences>,<#hasIntent>
+(<region.owl#hasRegion> owl:Thing)(<region.owl#isRegionFor> <region.owl#Region>)
+(<region.owl#hasRegion> <region.owl#Region>)(<region.owl#isRegionFor> owl:Thing)
+SubClassOf(<region.owl#Region> ObjectAllValuesFrom(<region.owl#isRegionFor> owl:Thing))

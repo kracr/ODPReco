@@ -1,0 +1,4 @@
+[<#Object>,<#hasComponent>,<#isComponentOf>,<#hasPart>,<#isPartOf>,<#coversRequirements>,<#extractedFrom>,<#hasConsequences>,<#hasIntent>,<#isSpecializationOf>
+ObjectPropertyDomain(<componency.owl#hasComponent> owl:Thing)ObjectPropertyDomain(<componency.owl#isComponentOf> owl:Thing)
+ObjectPropertyRange(<componency.owl#hasComponent> owl:Thing)ObjectPropertyRange(<componency.owl#isComponentOf> owl:Thing)
+SubClassOf(<componency.owl#Object> ObjectAllValuesFrom(<componency.owl#hasComponent> <componency.owl#Object>))SubClassOf(<componency.owl#Object> ObjectAllValuesFrom(<componency.owl#isComponentOf> <componency.owl#Object>))

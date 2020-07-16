@@ -1,0 +1,1 @@
+simulate If-Then of the type: something fullfills certain conditions should further given attribute.

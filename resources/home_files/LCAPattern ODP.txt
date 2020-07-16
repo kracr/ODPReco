@@ -1,0 +1,5 @@
+Life Cycle Assessment (LCA) environmental impact products taking into account their entire life-span production chain LCA/LCI 
+[<#Activity>, <#Agent>,<#Compartment>,<#ElementaryFlow>,<#Flow>,<#IntermediateFlow>,<#Location>,<#Product>,<#Property>,<#ReferencedProduct>,<#Time>,<#hasCompartment>,<#hasLocation>,<#hasProperty>,<#hasTemporalExtent>,<#isInputOf>,<#isOutputOf>,<#performs>,<#playsRoleOf>,<#air>,<#soil>,<#water>,<#hasIntent>]
+ObjectPropertyDomain(<LCAPattern.owl#performs> <LCAPattern.owl#Agent>)ObjectPropertyDomain(<LCAPattern.owl#isOutputOf> <LCAPattern.owl#Flow>)ObjectPropertyDomain(<LCAPattern.owl#isInputOf> <LCAPattern.owl#Flow>)
+ObjectPropertyRange(<LCAPattern.owl#performs> <LCAPattern.owl#Activity>)ObjectPropertyRange(<LCAPattern.owl#isOutputOf> <LCAPattern.owl#Activity>)ObjectPropertyRange(<LCAPattern.owl#isInputOf> <LCAPattern.owl#Activity>)
+SubClassOf(<LCAPattern.owl#ReferencedProduct> <LCAPattern.owl#Product>)

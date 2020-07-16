@@ -1,0 +1,40 @@
+1.0
+0.938358893654574
+0.7224284771066588
+0.517856408355393
+0.3967727334745003
+0.37820673698930773
+0.3506382115424139
+0.2595678278315671
+0.21441261326144354
+0.20868555876494613
+0.17701471367491453
+0.07184694872009376
+0.06983570885634528
+0.05632758482544179
+0.04305057410524865
+0.024752861814118454
+0.019594037825974
+0.008206989267307596
+0.003977556241860403
+0.0
+1.5531341955411055 Chess ODP(<http://purl.org/NET/rdfchess/ontology/>) 
+0.9022597039963076 ClimaticZone ODP(<http://www.ontologydesignpatterns.org/cp/owl/fsdas/climaticzone.owl>) 
+0.9150993068683982 HazardousSituation ODP(<http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation>) 
+0.8795678126039834 DUL ODP(<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl>) 
+1.1306335519958017 ActivityPattern ODP(<http://descartes-core.org/ontologies/activities/ActivityPattern>)
+0.866724371085631 ComputerSystem ODP(<http://mklab.iti.gr/pericles/ComputerSystem_ODP>)
+0.8860100586838283 InformationRealisation ODP(<http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl>)
+1.8451388146606615 LCAPattern ODP(<http://descartes-core.org/ontologies/lca/LCAPattern.owl>)
+0.9026164967258307 Policy ODP(<http://mklab.iti.gr/pericles/Policy_ODP>) 
+0.8837801137414645 TaskRole ODP(<http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl>) 
+0.9474450432104125 TaskExecution ODP(<http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl>)
+1.5178564083553931 Toco ODP(<http://purl.org/toco/>)
+0.8990232099746498 ManchesterSequence ODP(OntologyIRI(<http://www.gong.manchester.ac.uk/odp/owl/Domain_Modelling_ODP/Sequence.owl>)
+1.175469350402037 AdaptedSEP ODP(<http://www.gong.manchester.ac.uk/odp/owl/Domain_Modelling_ODP/Adapted_SEP.owl>) 
+0.922552652845752 Exception ODP(<http://www.gong.manchester.ac.uk/odp/owl/Extension_ODP/Exception.owl>) 
+0.8696553704370276 Closure ODP(OntologyIRI(<http://www.gong.manchester.ac.uk/odp/owl/Good_Practice_ODP/Closure.owl>)
+1.0223226966313128 EntityQuality ODP(<http://www.gong.manchester.ac.uk/odp/owl/Good_Practice_ODP/Entity_Quality.owl>)
+1.0655495336534737 Bag ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/bag>)
+0.9264655867491952 ParticipantRole ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole>)
+0.8645246215149794 TemporalExtentSpatio ODP(<https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent>) 
