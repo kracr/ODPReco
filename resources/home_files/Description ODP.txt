@@ -1,7 +1,0 @@
-[<#Concept>, <#Description>,<#defines>,<#isConceptUsedIn>,<#isDefinedIn>, <#usesConcept> 
-
- (<description.#isDefinedIn> <description.#Concept>) (<description.#isConceptUsedIn> <description.#Concept>) (<description.#defines> <description.#Description>) (<description.#usesConcept> <description.#Description>)
-
- (<description.#defines> <description.#Concept>) (<description.#usesConcept> <description.#Concept>) (<description.#isDefinedIn> <description.#Description>) (<description.#isConceptUsedIn> <description.#Description>)
-
- (<description.#Concept> ObjectMinCardinality(1 <description.#isConceptUsedIn> :Thing))

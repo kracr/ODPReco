@@ -1,6 +1,0 @@
-[<#Computer>,<#Driver>,<#Hardware>,<#OperatingSystem>,<#Software>,<#isCompatibleWith>,<#requiresHardware>,<#requiresSoftware>,<#usesDriver>,<#usesHardware>,<#usesOperatingSystem>,<#usesSoftware>,<#coversRequirements>,<#hasConsequences>,<#hasIntent>,<#scenarios>]
-
-ObjectPropertyRange(<ComputerSystem_ODP#requiresHardware> <ComputerSystem_ODP#Hardware>)ObjectPropertyRange(<ComputerSystem_ODP#usesOperatingSystem> <ComputerSystem_ODP#OperatingSystem>)ObjectPropertyRange(<ComputerSystem_ODP#usesHardware> <ComputerSystem_ODP#Hardware>)ObjectPropertyRange(<ComputerSystem_ODP#usesDriver> <ComputerSystem_ODP#Driver>)ObjectPropertyRange(<ComputerSystem_ODP#requiresSoftware> <ComputerSystem_ODP#Software>)ObjectPropertyRange(<ComputerSystem_ODP#usesSoftware> <ComputerSystem_ODP#Software>)
-
-SubClassOf(<ComputerSystem_ODP#Driver> <ComputerSystem_ODP#Software>)SubClassOf(<ComputerSystem_ODP#OperatingSystem> <ComputerSystem_ODP#Software>)
-

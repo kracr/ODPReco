@@ -1,7 +1,0 @@
-[<#Activity>,<#FixedActivity>,<#FlexibleActivity>,<#Outcome>,<#Place>,<#Requirement>,<#SpatialThing>,</foaf/0.1/Agent>,<#hasDependent>,<#hasOutcome>,<#hasPart>,<#hasParticipant>,<#hasRequirement>,<#isDependentOf>,<#isPartOf>,<#isPrecededBy>,<#isRequirementOf>,<#precedes>,<#produces>,<#supports>,<#takesPlaceAt>,<#hasDuration>,<#hasEnd>,<#hasStart>,<#coversRequirements>,<#hasConsequences>,<#hasIntent>,<#relatedCPs>,</schemas#scenarios>
-
-
-ObjectPropertyDomain(<classification.owl#classifies> <classification.owl#Concept>)ObjectPropertyDomain(<classification.owl#isClassifiedBy> owl:Thing)
-
-ObjectPropertyRange(<classification.owl#classifies> owl:Thing)ObjectPropertyRange(<classification.owl#isClassifiedBy> <classification.owl#Concept>)
-
