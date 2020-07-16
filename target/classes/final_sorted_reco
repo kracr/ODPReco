@@ -1,0 +1,8 @@
+ LCAPattern ODP(<http://descartes-core.org/ontologies/lca/LCAPattern.owl>)
+ EntityQuality ODP(<http://www.gong.manchester.ac.uk/odp/owl/Good_Practice_ODP/Entity_Quality.owl>)
+ AdaptedSEP ODP(<http://www.gong.manchester.ac.uk/odp/owl/Domain_Modelling_ODP/Adapted_SEP.owl>) 
+ Toco ODP(<http://purl.org/toco/>)
+ TaskRole ODP(<http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl>) 
+ HazardousSituation ODP(<http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation>) 
+ TaskExecution ODP(<http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl>)
+ Chess ODP(<http://purl.org/NET/rdfchess/ontology/>) 

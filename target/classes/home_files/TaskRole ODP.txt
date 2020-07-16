@@ -1,0 +1,4 @@
+[<#Role>,<#Task>,<#hasTask>,<#isTaskOf>,<#coversRequirements>, <#extractedFrom>,<#hasConsequences>]
+ObjectPropertyDomain(<taskrole.owl#isTaskOf> <taskrole.owl#Task>)ObjectPropertyDomain(<taskrole.owl#hasTask> <taskrole.owl#Role>)
+ObjectPropertyRange(<taskrole.owl#isTaskOf> <taskrole.owl#Role>)ObjectPropertyRange(<taskrole.owl#hasTask> <taskrole.owl#Task>)
+SubClassOf(<taskrole.owl#Task> ObjectAllValuesFrom(<taskrole.owl#isTaskOf> <taskrole.owl#Role>))SubClassOf(<taskrole.owl#Role> ObjectAllValuesFrom(<taskrole.owl#hasTask> <taskrole.owl#Task>))

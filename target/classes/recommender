@@ -1,0 +1,8 @@
+0.9175903241301517 Chess ODP(<http://purl.org/NET/rdfchess/ontology/>) 
+1.0 HazardousSituation ODP(<http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation>) 
+1.560698385335007 LCAPattern ODP(<http://descartes-core.org/ontologies/lca/LCAPattern.owl>)
+1.0122301003157175 TaskRole ODP(<http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl>) 
+0.9222471412123533 TaskExecution ODP(<http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl>)
+1.046987793580869 Toco ODP(<http://purl.org/toco/>)
+1.2007338687936049 AdaptedSEP ODP(<http://www.gong.manchester.ac.uk/odp/owl/Domain_Modelling_ODP/Adapted_SEP.owl>) 
+1.224234259188858 EntityQuality ODP(<http://www.gong.manchester.ac.uk/odp/owl/Good_Practice_ODP/Entity_Quality.owl>)

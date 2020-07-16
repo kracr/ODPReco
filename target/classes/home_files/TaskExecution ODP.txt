@@ -1,0 +1,4 @@
+[<#Agent>, <#Object>,<#Role>,<#Event>,<#Object>,<#Action>,<#Role>,<#Task>,<#classifies>, <#isClassifiedBy>, <#hasParticipant>,<#executesTask>,<#isExecutedIn>, <#coversRequirements>,<#extractedFrom>,<#hasComponent>,<#hasConsequences>,<#hasIntent>]
+ObjectPropertyDomain(<taskexecution.owl#isExecutedIn> <taskrole.owl#Task>)ObjectPropertyDomain(<taskexecution.owl#executesTask> <taskexecution.owl#Action>)
+ObjectPropertyRange(<taskexecution.owl#isExecutedIn> <taskexecution.owl#Action>)ObjectPropertyRange(<taskexecution.owl#executesTask> <taskrole.owl#Task>)
+SubClassOf(<taskexecution.owl#Action> <participation.owl#Event>)SubClassOf(<taskexecution.owl#Action> ObjectSomeValuesFrom(<participation.owl#hasParticipant> <agentrole.owl#Agent>))SubClassOf(<taskexecution.owl#Action> ObjectMinCardinality(1 <taskexecution.owl#executesTask> owl:Thing))

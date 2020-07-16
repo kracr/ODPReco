@@ -1,0 +1,3 @@
+[<#Concept>,<#classifies>,<#isClassifiedBy>,<#coversRequirements>,<#extractedFrom>,<#hasConsequences>,<#hasIntent>,<#relatedCPs>,<#scenarios>
+ObjectPropertyDomain(<classification.owl#classifies> <classification.owl#Concept>)ObjectPropertyDomain(<classification.owl#isClassifiedBy> owl:Thing)
+ObjectPropertyRange(<classification.owl#classifies> owl:Thing)ObjectPropertyRange(<classification.owl#isClassifiedBy> <classification.owl#Concept>)

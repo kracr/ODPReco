@@ -1,0 +1,2 @@
+[owl:Thing, <explicittyping#Type>, <explicittyping#hasType>, <http://ontologydesignpatterns.org/opla#isNativeTo>, rdfs:Literal]
+SubClassOf(owl:Thing ObjectAllValuesFrom(<explicittyping#hasType> <explicittyping#Type>))

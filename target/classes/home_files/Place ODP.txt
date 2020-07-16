@@ -1,0 +1,4 @@
+[<#Place>,<#hasLocation>,<#isLocationOf>,<#coversRequirements>,<#extractedFrom>,<#hasAuthor>,<#hasConsequences>,<#hasIntent> XMLSchema#string]
+ObjectPropertyDomain(<place.owl#isLocationOf> owl:Thing)ObjectPropertyDomain(<place.owl#hasLocation> owl:Thing)
+ObjectPropertyRange(<place.owl#isLocationOf> owl:Thing)ObjectPropertyRange(<place.owl#hasLocation> owl:Thing)
+
