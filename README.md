@@ -32,11 +32,11 @@ One of the main challenges of an ontology design is its re-usability. Ontologies
 
 Our work is based on recommending ODPs for an ontology. By using an ODP in an ontology, the user can re-use the features of ODP according to his domain and make the ontology more modular.
 
-In order to recommend ODPs, ODPReco maintains a list of avaiable ODPs. The details of the ODPs maintained are - their OWL file, competency questions and their description. 73 ODPs are maintained from three datasets.
+In order to recommend ODPs, ODPReco maintains a list of avaiable ODPs. The details of the ODPs maintained are - the ontology, competency questions and their description. 70 ODPs are maintained from three datasets.
 
 1. ODPs from the ODP repository http://ontologydesignpatterns.org. Out of the 220 ODPs available, we have considered 41 ODPs in our collection. Not all ODPs are included in our collection because several ODPs either do not have downloadable OWL file or have similar OWL files. So, to avoid redundancy of OWL files, only 41 ODPs are included. 
 
-2. MODL: Modular Ontology Design Library is a well-documented, downloadable collection of ODPs. Some of the ODPs present in this dataset are taken from the ODP repository and their ordered and well-organised OWL file along with the competency questions is created. For our collection, all the 17 ODPs present in MODL have been considered. 
+2. MODL: Modular Ontology Design Library is a well-documented, downloadable collection of ODPs. Some of the ODPs present in this dataset are taken from the ODP repository and their ordered and well-organised OWL file along with the competency questions is created.
 
 3. Manchester ODPs: These ODPs are exclusively maintained for the biological domain. The ODPs present are divided into three categories - Extension ODPs (bypassing the limitation of OWL), Good Practice ODPs (for obtaining robust and a cleaner ontology) and Domain Modelling ODPs (modelling solutions in the domain of biology). 15 ODPs are present in total and all 15 present are included in our collection.
 
