@@ -44,7 +44,6 @@ In order to recommend ODPs, ODPReco maintains a list of avaiable ODPs. The detai
 
 The ODPs are recommended on the basis of 3 analysis - structural, behavioural and lexical. 
 
-The analysis is done using two approaches- Doc2Vec and Lucene approach. Both the approaches are executed and the top recomemndations from them are displayed. 
 
 *Structural Analysis-*
 
@@ -58,19 +57,13 @@ Competency Questions are considered to be important for an ontology. The compete
 
 The signature of the ontology is compared with the signature of ODPs present in our collection. The signature includes the names of the classes, properties and instances of an ontology. Apart from the signature, description (brief overview) of the ontology is also used in this analysis.
 
-After doing the analysis of these three dimensions, the numeric values obtained are added for each listed ODP. So, we obtain 73 values (of ODPs) against an ontology. The values obtained are normalized so that they can be ranged between 0-1.  
-
-Lucene approach is also implemented for the recommendations. In this approach, ODPs are recommended based on the OWL file axioms and description. ODP files (73 in number) are maintained. Each file contains the signature and the axioms. The user ontology is mapped with these ODP files using lucene in order to determine the relevant ODPs for the given ontology. The scores obtained from this approacha are also normalised.
-
-The two normalised scores are integrated together and a threshold of 0.85 is set. All the ODPs which have a score >= .85 are recommended for the given ontology.
-
-The 73 ODPs that are considered in our tool are available with the OWL file, Competency Questions and the Description.
+After doing the analysis of these three dimensions, the numeric values obtained are added for each listed ODP. So, we obtain values of ODPs against an ontology. The values obtained are normalized so that they can be ranged between 0-1. Threshold is set and values greater than the set threshold are recommended to the user.
 
 The necessary condition for using this tool is to upload the OWL file. If the OWL file of an ontology is not provided, then our tool will not be able to provide any recommendations. However, if the description or competency questions of an ontology aren’t available, then still the ODP recommendation is made. 
 
 # About the Repository
 
-This repository has all the relevant files related to ODPReco tool. The java code for ODPReco is under the recommender package. Under the 'resources' folder, it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective associated files. The pom file that is used for compiling and building this tool is also presnt separately. Under the 'META-INF' folder, manifest file is present which contains the details about the main class. The 'target' folder is used to store the jar file when this tool is compiled. Pdf file of ODPList is present. This pdf has the description of all the 73 ODPs that are used in our tool.
+This repository has all the relevant files related to ODPReco tool. The java code for ODPReco is under the recommender package. Under the 'resources' folder, it has the files  that are required during execution. The odp files are also present in this folder. If a user wishes to add odps to our collection, then the user has to update the odp files by appending the new odp (at line 74) and its properties to the respective associated files. The pom file that is used for compiling and building this tool is also presnt separately. Under the 'META-INF' folder, manifest file is present which contains the details about the main class. The 'target' folder is used to store the jar file when this tool is compiled. Pdf file of ODPList is present. This pdf has the description of all the ODPs that are used in our tool.
 
 # USAGE
 
